@@ -7,9 +7,9 @@ const {
   readdirSync,
 } = require("fs");
 
-function readYearFileList(year) {
+function readYearFileList() {
   const fileList = [];
-  const dirPath = resolve(`./docs/year/${year}`);
+  const dirPath = resolve("./src/year");
   const isDir = existsSync(dirPath) && lstatSync(dirPath).isDirectory();
   if (!isDir) {
     return fileList;

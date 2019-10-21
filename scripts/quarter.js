@@ -9,7 +9,7 @@ const {
 
 function readQuarterFileList(year) {
   const fileList = [];
-  const dirPath = resolve(`./docs/quarter/${year}/`);
+  const dirPath = resolve(`./src/quarter/${year}/`);
   const isDir = existsSync(dirPath) && lstatSync(dirPath).isDirectory();
   if (!isDir) {
     return fileList;

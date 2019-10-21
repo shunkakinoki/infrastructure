@@ -9,7 +9,7 @@ const {
 
 function readWeekFileList(year) {
   const fileList = [];
-  const dirPath = resolve(`./docs/week/${year}`);
+  const dirPath = resolve(`./src/week/${year}`);
   const isDir = existsSync(dirPath) && lstatSync(dirPath).isDirectory();
   if (!isDir) {
     return fileList;
