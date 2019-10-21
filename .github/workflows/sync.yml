@@ -6,15 +6,17 @@ jobs:
   sync:
     runs-on: ubuntu-lates
     steps:
-      - name: Checkout to Repository
+      - name: Checkout from Repository
         id: checkout
         uses: actions/checkout@master
 
-      - name: Copy Repository Contents from shunkakinoki
+      - name: Checkout from shunkakinoki
         uses: actions/checkout@master
         with:
           repository: "shunkakinoki/shunkakinoki"
           path: tmp
+
+      - name: Copy Repository Contents
         run: |
           cd $GITHUB_WORKSPACE
           rm -rf tmp/.git
