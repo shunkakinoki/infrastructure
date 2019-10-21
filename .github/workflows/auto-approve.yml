@@ -1,5 +1,7 @@
 name: Auto-Approve
-on: pull_request
+on:
+  pull_request:
+    types: [labeled]
 jobs:
   auto-approve:
     runs-on: ubuntu-latest
