@@ -7,6 +7,16 @@ jobs:
     if: github.actor == 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
+      - name: Copy Repository Contents
+        uses: actions/checkout@master
+
+      - name: Trigger on PR Label
+        id: label
+        run: python gha/validate_payload.py
+        env:
+          TRIGGER_LABEL_NAME: "Auto PR"
+
       - uses: hmarr/auto-approve-action@master
+        if: steps.label.outputs.TRIGGERED == 'true'
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
