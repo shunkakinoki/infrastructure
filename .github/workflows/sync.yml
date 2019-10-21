@@ -19,9 +19,8 @@ jobs:
 
       - name: Copy Repository Contents
         run: |
-          cd $GITHUB_WORKSPACE
           rm -rf tmp/.git
-          cp -a tmp/src/. src/
+          cp -a tmp/src/. $GITHUB_WORKSPACE/src/
 
       - name: Create a Pull Request if Updated
         uses: peter-evans/create-pull-request@v1.5.3
