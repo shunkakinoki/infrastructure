@@ -9,7 +9,7 @@ const {
 
 function readMonthFileList(year) {
   const fileList = [];
-  const dirPath = resolve(`./docs/month/${year}/`);
+  const dirPath = resolve(`./src/month/${year}/`);
   const isDir = existsSync(dirPath) && lstatSync(dirPath).isDirectory();
   if (!isDir) {
     return fileList;

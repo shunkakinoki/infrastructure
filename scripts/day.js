@@ -9,7 +9,7 @@ const {
 
 function readDayFileList(year, moon) {
   const fileList = [];
-  const dirPath = resolve(`./docs/day/${year}/${moon}/`);
+  const dirPath = resolve(`./src/day/${year}/${moon}/`);
   const isDir = existsSync(dirPath) && lstatSync(dirPath).isDirectory();
   if (!isDir) {
     return fileList;
