@@ -4,7 +4,7 @@ on:
     - cron: "*/3 * * * *"
 jobs:
   sync:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout from Repository
         id: checkout
