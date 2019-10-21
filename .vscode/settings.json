@@ -17,5 +17,6 @@
         "editorGroup.border": "#cf7bc1",
         "tab.activeBorder": "#cf7bc1"
     },
-    "peacock.color": "#c255af"
+    "peacock.color": "#c255af",
+    "git.ignoreLimitWarning": true
 }
