@@ -4,6 +4,7 @@ on:
     - cron: "*/3 * * * *"
 jobs:
   sync:
+    runs-on: ubuntu-lates
     steps:
       - name: Checkout to Repository
         id: checkout
@@ -14,7 +15,7 @@ jobs:
         with:
           repository: "shunkakinoki/shunkakinoki"
           path: tmp
-        run: /
+        run: |
           cd $GITHUB_WORKSPACE
           rm -rf tmp/.git
           cp -a tmp/. src/
