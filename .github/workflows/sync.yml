@@ -1,4 +1,4 @@
-name: Sync Github Repo with shunkakinoki
+name: Sync Github Repo
 on:
   schedule:
     - cron: "*/3 * * * *"
