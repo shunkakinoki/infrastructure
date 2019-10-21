@@ -24,20 +24,15 @@ jobs:
       - name: Set Output Variables
         id: vars
         run: |
-          echo ::set-output name=commit_message::"Sync with shunkakinoki $(date +%d-%m-%Y)"
           echo ::set-output name=pr_title::"Sync Github Repo $(date +%d-%m-%Y)"
-          echo ::set-output name=pr_body::"This PR was auto-generated on $(date +%d-%m-%Y) \
-            by [create-pull-request](https://github.com/peter-evans/create-pull-request)."
 
       - name: Create a Pull Request if Updated
         uses: peter-evans/create-pull-request@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          COMMIT_MESSAGE: ${{ steps.vars.output.commit_message }}
           COMMIT_AUTHOR_EMAIL: shunkakinoki@gmail.com
           COMMIT_AUTHOR_NAME: Shun Kakinoki
           PULL_REQUEST_TITLE: ${{ steps.vars.outputs.pr_title }}
-          PULL_REQUEST_BODY: ${{ steps.vars.outputs.pr_body }}
           PULL_REQUEST_LABELS: Auto PR
           PULL_REQUEST_ASSIGNEES: shunkakinoki
           PULL_REQUEST_REVIEWERS: shunkakinoki
