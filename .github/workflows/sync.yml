@@ -4,9 +4,9 @@ on:
     - cron: "*/3 * * * *"
 jobs:
   sync:
-    runs-on: ubuntu-lates
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout to Repository
+      - name: Checkout from Repository
         id: checkout
         uses: actions/checkout@master
 
