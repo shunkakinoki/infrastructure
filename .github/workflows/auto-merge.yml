@@ -23,7 +23,7 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           LABELS: "!wip"
-          AUTOMERGE: "AUTO PR"
+          AUTOMERGE: "Auto PR"
           MERGE_METHOD: "merge"
           MERGE_FORKS: "false"
           COMMIT_MESSAGE_TEMPLATE: "automatic"
