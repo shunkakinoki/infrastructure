@@ -1,0 +1,34 @@
+name: Sync Github Repo with shunkakinoki
+on:
+  schedule:
+    - cron: "*/3 * * * *"
+jobs:
+  sync:
+    steps:
+      - name: Checkout to Repository
+        id: checkout
+        uses: actions/checkout@master
+
+      - name: Copy Repository Contents from shunkakinoki
+        uses: actions/checkout@master
+        with:
+          repository: "shunkakinoki/shunkakinoki"
+          path: tmp
+        run: /
+          cd $GITHUB_WORKSPACE
+          rm -rf tmp/.git
+          cp -a tmp/. src/
+
+      - name: Create a Pull Request if Updated
+        uses: peter-evans/create-pull-request@v1.5.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMIT_MESSAGE: sync with shunkakinoki
+          COMMIT_AUTHOR_EMAIL: shunkakinoki@gmail.com
+          COMMIT_AUTHOR_NAME: Shun Kakinoki
+          PULL_REQUEST_TITLE: Sync Github Repo with shunkakinoki
+          PULL_REQUEST_BODY: This is an auto-generated PR with fixes by sync.
+          PULL_REQUEST_LABELS: Auto PR
+          PULL_REQUEST_REVIEWERS: shunkakinoki
+          PULL_REQUEST_BRANCH: short-commit-hash
+          BRANCH_SUFFIX: none
