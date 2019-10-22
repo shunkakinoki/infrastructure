@@ -20,3 +20,17 @@ jobs:
         if: steps.label.outputs.TRIGGERED == 'true'
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+  auto-merge:
+    needs: [auto-approve]
+    runs-on: ubuntu-latest
+    steps:
+      - name: automerge
+        uses: "pascalgn/automerge-action@master"
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          LABELS: "!wip"
+          AUTOMERGE: "Auto PR"
+          MERGE_METHOD: "merge"
+          MERGE_FORKS: "false"
+          COMMIT_MESSAGE_TEMPLATE: "automatic"

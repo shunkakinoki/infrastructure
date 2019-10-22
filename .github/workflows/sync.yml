@@ -33,8 +33,18 @@ jobs:
           COMMIT_AUTHOR_EMAIL: shunkakinoki@gmail.com
           COMMIT_AUTHOR_NAME: Shun Kakinoki
           PULL_REQUEST_TITLE: ${{ steps.vars.outputs.pr_title }}
-          PULL_REQUEST_LABELS: Auto PR
+          PULL_REQUEST_BODY: /auto-merge-pr
           PULL_REQUEST_ASSIGNEES: shunkakinoki
           PULL_REQUEST_REVIEWERS: shunkakinoki
           PULL_REQUEST_BRANCH: sync
           BRANCH_SUFFIX: short-commit-hash
+
+      - name: Auto Label with Pull Request
+        uses: docker://shunkakinoki/shunblog:latest
+        with:
+          APP_PEM: ${{ secrets.APP_PEM }}
+          APP_ID: ${{ secrets.APP_ID }}
+          TRIGGER_PHRASE: /auto-merge-pr
+          INDICATOR_LABEL: Auto PR
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
