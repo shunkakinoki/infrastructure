@@ -38,13 +38,3 @@ jobs:
           PULL_REQUEST_REVIEWERS: shunkakinoki
           PULL_REQUEST_BRANCH: sync
           BRANCH_SUFFIX: short-commit-hash
-
-      - name: Auto Label with Pull Request
-        uses: machine-learning-apps/actions-chatops@master
-        with:
-          APP_PEM: ${{ secrets.APP_PEM }}
-          APP_ID: ${{ secrets.APP_ID }}
-          TRIGGER_PHRASE: /auto-merge-pr
-          INDICATOR_LABEL: Auto PR
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
