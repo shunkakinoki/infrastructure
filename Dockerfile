@@ -11,10 +11,10 @@ WORKDIR /app
 # Copying Pipfile & Pipfile.lock & label_app.py
 COPY Pipfile Pipfile
 COPY Pipfile.lock Pipfile.lock
-COPY gha/label_app.py label_app.py
+COPY gha/label_app.py /label_app.py
 
 # Install Dependencies
 RUN set -ex && pipenv sync --dev
 
 # Run Python Script
-ENTRYPOINT ["pipenv", "run", "python", "label_app.py"]
+ENTRYPOINT ["pipenv", "run", "python", "/label_app.py"]
