@@ -18,5 +18,6 @@
         "tab.activeBorder": "#cf7bc1"
     },
     "peacock.color": "#c255af",
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": ".venv/bin/python"
 }
