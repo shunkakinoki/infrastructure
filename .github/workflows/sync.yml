@@ -44,7 +44,7 @@ jobs:
         with:
           APP_PEM: ${{ secrets.APP_PEM }}
           APP_ID: ${{ secrets.APP_ID }}
-          TRIGGER_PHRASE: "/auto-merge-pr"
-          INDICATOR_LABEL: "Auto PR"
+          TRIGGER_PHRASE: /auto-merge-pr
+          INDICATOR_LABEL: Auto PR
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
