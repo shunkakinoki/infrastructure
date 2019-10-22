@@ -47,4 +47,4 @@ jobs:
           TRIGGER_PHRASE: "/auto-merge-pr"
           INDICATOR_LABEL: "Auto PR"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
