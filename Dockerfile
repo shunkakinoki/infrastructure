@@ -17,4 +17,4 @@ COPY gha/label_app.py label_app.py
 RUN set -ex && pipenv sync --dev
 
 # Run Python Script
-ENTRYPOINT ["pipenv", "run" "label_app.py"]
+ENTRYPOINT ["pipenv", "run", "python", "label_app.py"]
