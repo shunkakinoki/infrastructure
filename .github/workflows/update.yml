@@ -1,0 +1,40 @@
+name: Update Github Repo
+on:
+  schedule:
+    - cron: "*/3 * * * *"
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout from Repository
+        id: checkout
+        uses: actions/checkout@master
+
+      - name: Checkout from shunkakinoki
+        uses: actions/checkout@master
+        with:
+          path: tmp
+          repository: shunkakinoki/shunkakinoki
+          ref: master
+
+      - name: Copy Repository Contents
+        run: |
+          cp -a /home/runner/work/shunblog/tmp/src/. $GITHUB_WORKSPACE/src/
+
+      - name: Set Output Variables
+        id: vars
+        run: |
+          echo ::set-output name=pr_title::"Sync Github Repo $(date +%d-%m-%Y)"
+
+      - name: Create a Pull Request if Updated
+        uses: peter-evans/create-pull-request@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMIT_AUTHOR_EMAIL: shunkakinoki@gmail.com
+          COMMIT_AUTHOR_NAME: Shun Kakinoki
+          PULL_REQUEST_TITLE: ${{ steps.vars.outputs.pr_title }}
+          PULL_REQUEST_BODY: /auto-merge-pr
+          PULL_REQUEST_ASSIGNEES: shunkakinoki
+          PULL_REQUEST_REVIEWERS: shunkakinoki
+          PULL_REQUEST_BRANCH: sync
+          BRANCH_SUFFIX: short-commit-hash

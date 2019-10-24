@@ -1,40 +1,23 @@
-name: Sync Github Repo
+name: Sync to S3 Bucket
 on:
-  schedule:
-    - cron: "*/3 * * * *"
+  push:
+    branches:
+      - master
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout from Repository
-        id: checkout
-        uses: actions/checkout@master
-
-      - name: Checkout from shunkakinoki
-        uses: actions/checkout@master
+      - uses: actions/checkout@master
+      - run: |
+          cd $GITHUB_WORKSPACE
+          yarn install
+          yarn run build
+      - uses: awact/s3-action@master
         with:
-          path: tmp
-          repository: shunkakinoki/shunkakinoki
-          ref: master
-
-      - name: Copy Repository Contents
-        run: |
-          cp -a /home/runner/work/shunblog/tmp/src/. $GITHUB_WORKSPACE/src/
-
-      - name: Set Output Variables
-        id: vars
-        run: |
-          echo ::set-output name=pr_title::"Sync Github Repo $(date +%d-%m-%Y)"
-
-      - name: Create a Pull Request if Updated
-        uses: peter-evans/create-pull-request@master
+          args: --acl public-read --follow-symlinks --delete
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          COMMIT_AUTHOR_EMAIL: shunkakinoki@gmail.com
-          COMMIT_AUTHOR_NAME: Shun Kakinoki
-          PULL_REQUEST_TITLE: ${{ steps.vars.outputs.pr_title }}
-          PULL_REQUEST_BODY: /auto-merge-pr
-          PULL_REQUEST_ASSIGNEES: shunkakinoki
-          PULL_REQUEST_REVIEWERS: shunkakinoki
-          PULL_REQUEST_BRANCH: sync
-          BRANCH_SUFFIX: short-commit-hash
+          SOURCE_DIR: "src/.vuepress/dist"
+          AWS_REGION: "us-east-1"
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKETAWS_S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
