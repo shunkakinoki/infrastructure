@@ -1,0 +1,12 @@
+name: Code Coverage
+on:
+  push:
+    branches:
+      - master
+jobs:
+  steps:
+    codecov:
+      - uses: actions/checkout@master
+      - uses: codecov/codecov-action@master
+        with:
+          token: ${{secrets.CODECOV_TOKEN}}
