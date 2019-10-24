@@ -5,6 +5,7 @@ on:
       - master
 jobs:
   codecov:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
       - uses: codecov/codecov-action@master
