@@ -4,8 +4,8 @@ on:
     branches:
       - master
 jobs:
-  steps:
-    codecov:
+  codecov:
+    steps:
       - uses: actions/checkout@master
       - uses: codecov/codecov-action@master
         with:
