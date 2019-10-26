@@ -21,9 +21,9 @@ jobs:
         run: |
           mkdir /home/runner/work/shunblog/tmp/.vuepress
           cp -a $GITHUB_WORKSPACE/src/.vuepress/. /home/runner/work/shunblog/tmp/.vuepress/
-          rsync -aRqz --delete /home/runner/work/shunblog/tmp/src $GITHUB_WORKSPACE/src
-          mkdir $GITHUB_WORKSPACE/src/.vuepress
-          cp -a /home/runner/work/shunblog/tmp/.vuepress/. $GITHUB_WORKSPACE/src/.vuepress/
+          rsync -aqu --delete /home/runner/work/shunblog/tmp/src $GITHUB_WORKSPACE/src
+          # mkdir $GITHUB_WORKSPACE/src/.vuepress
+          # cp -a /home/runner/work/shunblog/tmp/.vuepress/. $GITHUB_WORKSPACE/src/.vuepress/
 
       - name: Set Output Variables
         id: vars
