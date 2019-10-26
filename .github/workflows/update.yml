@@ -19,6 +19,7 @@ jobs:
 
       - name: Copy Repository Contents
         run: |
+          mkdir /home/runner/work/shunblog/tmp/.vuepress
           rsync -aRqz /home/runner/work/shunblog/tmp/src/.vuepress/. $/home/runner/work/shunblog/tmp/.vuepress
           rsync -aRqz --delete /home/runner/work/shunblog/tmp/src/ $GITHUB_WORKSPACE/src
           rsync -aRqz /home/runner/work/shunblog/tmp/.vuepress/ $GITHUB_WORKSPACE/src/.vuepress
