@@ -19,9 +19,9 @@ jobs:
 
       - name: Copy Repository Contents
         run: |
-          cp -a /home/runner/work/shunblog/tmp/src/.vuepress/. $/home/runner/work/shunblog/tmp/.vuepress/
+          rsync -aqz /home/runner/work/shunblog/tmp/src/.vuepress/. $/home/runner/work/shunblog/tmp/.vuepress
           rsync -avu --delete /home/runner/work/shunblog/tmp/src/ $GITHUB_WORKSPACE/src
-          cp -a /home/runner/work/shunblog/tmp/.vuepress/. $GITHUB_WORKSPACE/src/.vuepress/
+          rsync -aqz /home/runner/work/shunblog/tmp/.vuepress/ $GITHUB_WORKSPACE/src/.vuepress
 
       - name: Set Output Variables
         id: vars
