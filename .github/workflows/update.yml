@@ -19,7 +19,7 @@ jobs:
 
       - name: Copy Repository Contents
         run: |
-          cp -a /home/runner/work/shunblog/tmp/src/. $GITHUB_WORKSPACE/src/
+          rsync -avu --delete /home/runner/work/shunblog/tmp/src/ $GITHUB_WORKSPACE/src
 
       - name: Set Output Variables
         id: vars
