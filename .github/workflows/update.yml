@@ -38,7 +38,5 @@ jobs:
           COMMIT_AUTHOR_NAME: Shun Kakinoki
           PULL_REQUEST_TITLE: ${{ steps.vars.outputs.pr_title }}
           PULL_REQUEST_BODY: /auto-merge-pr
-          PULL_REQUEST_ASSIGNEES: shunkakinoki
-          PULL_REQUEST_REVIEWERS: shunkakinoki
           PULL_REQUEST_BRANCH: sync
           BRANCH_SUFFIX: short-commit-hash
