@@ -29,14 +29,17 @@ jobs:
         id: vars
         run: |
           echo ::set-output name=pr_title::"Sync Github Repo $(date +%d-%m-%Y)"
+          echo ::set-output name=pr_body::"This PR was auto-generated on $(date +%d-%m-%Y) \
+            by [create-pull-request](https://github.com/peter-evans/create-pull-request)."
 
       - name: Create a Pull Request if Updated
-        uses: peter-evans/create-pull-request@master
+        uses: peter-evans/create-pull-request@v1.5.4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COMMIT_AUTHOR_EMAIL: shunkakinoki@gmail.com
           COMMIT_AUTHOR_NAME: Shun Kakinoki
           PULL_REQUEST_TITLE: ${{ steps.vars.outputs.pr_title }}
-          PULL_REQUEST_BODY: /auto-merge-pr
+          PULL_REQUEST_BODY: ${{ steps.vars.outputs.pr_body }}
           PULL_REQUEST_BRANCH: sync
+          PULL_REQUEST_REVIEWERS: shunkakinoki
           BRANCH_SUFFIX: short-commit-hash
