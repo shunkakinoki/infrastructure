@@ -41,4 +41,5 @@ jobs:
           PULL_REQUEST_TITLE: ${{ steps.vars.outputs.pr_title }}
           PULL_REQUEST_BODY: ${{ steps.vars.outputs.pr_body }}
           PULL_REQUEST_BRANCH: sync
+          PULL_REQUEST_REVIEWERS: shunkakinoki
           BRANCH_SUFFIX: short-commit-hash
