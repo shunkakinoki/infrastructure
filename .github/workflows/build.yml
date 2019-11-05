@@ -10,9 +10,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - run: |
-          cd $GITHUB_WORKSPACE
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - name: Cache node modules
+        id: cache
+        uses: actions/cache@preview
+        with:
+          path: node_modules
+          key: node-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            node-
+      - name: Install dependencies with yarn
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
           yarn install
+      - name: Build Vuepress Site
+        run: |
           yarn run build
       - name: Label on PR
         uses: awact/label-action@master
