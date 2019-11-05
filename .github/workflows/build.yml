@@ -1,5 +1,12 @@
 name: Build
 on:
+  push:
+    branches:
+      - master
+    paths:
+      - "src/**"
+      - "package.json"
+      - "yarn.lock"
   pull_request:
     paths:
       - "src/**"
