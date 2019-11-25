@@ -9,14 +9,12 @@ jobs:
       - name: Checkout from Repository
         id: checkout
         uses: actions/checkout@master
-
       - name: Checkout from shunkakinoki
         uses: actions/checkout@master
         with:
           path: tmp
           repository: shunkakinoki/shunkakinoki
           ref: master
-
       - name: Copy Repository Contents
         run: |
           mkdir /home/runner/work/shunblog/tmp/.vuepress
@@ -24,7 +22,6 @@ jobs:
           rsync -aqu --delete /home/runner/work/shunblog/tmp/src/ $GITHUB_WORKSPACE/src
           mkdir $GITHUB_WORKSPACE/src/.vuepress
           cp -a /home/runner/work/shunblog/tmp/.vuepress/. $GITHUB_WORKSPACE/src/.vuepress/
-
       - name: Set Output Variables
         id: vars
         run: |
@@ -32,7 +29,6 @@ jobs:
           echo ::set-output name=pr_body::"@shunkakinoki \
             This PR was auto-generated on $(date +%d-%m-%Y) \
             by [create-pull-request](https://github.com/peter-evans/create-pull-request)."
-
       - name: Create a Pull Request if Updated
         uses: peter-evans/create-pull-request@v1.5.4
         env:
