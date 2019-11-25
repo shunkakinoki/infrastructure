@@ -3,9 +3,8 @@ on:
   push:
     branches:
       - master
-  pull_request_review:
-    types:
-      - submitted
+  pull_request:
+    types: [opened, synchronize, reopened]
 jobs:
   build:
     runs-on: ubuntu-latest
