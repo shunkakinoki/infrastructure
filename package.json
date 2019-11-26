@@ -6,7 +6,7 @@
   "devDependencies": {
     "@vssue/vuepress-plugin-vssue": "^1.2.2",
     "@vuepress/plugin-google-analytics": "^1.0.0-alpha.0",
-    "coveralls": "^3.0.8",
+    "coveralls": "^3.0.9",
     "eslint": "^5.12.1",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.15.0",
