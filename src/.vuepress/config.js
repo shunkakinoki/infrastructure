@@ -1,39 +1,46 @@
-const readDayFileList = require('../../scripts/day.js');
-const readWeekFileList = require('../../scripts/week.js');
-const readMonthFileList = require('../../scripts/month.js');
-const readQuarterFileList = require('../../scripts/quarter.js');
-const readYearFileList = require('../../scripts/year.js');
+const readDayFileList = require("../../scripts/day.js");
+const readWeekFileList = require("../../scripts/week.js");
+const readMonthFileList = require("../../scripts/month.js");
+const readQuarterFileList = require("../../scripts/quarter.js");
+const readYearFileList = require("../../scripts/year.js");
 
 module.exports = {
   title: "shunblog",
   description: "Life Mission",
-  base: '/',
+  base: "/",
+  theme: "yuu",
   head: [
-    ['link', {
-      rel: 'icon',
-      href: '/logo.png'
-    }]
+    [
+      "link",
+      {
+        rel: "icon",
+        href: "/logo.png"
+      }
+    ]
   ],
   themeConfig: {
-    lastUpdated: 'Last Updated',
-    nav: [{
-        text: 'Home',
-        link: '/'
+    lastUpdated: "Last Updated",
+    nav: [
+      {
+        text: "Home",
+        link: "/"
       },
       {
-        text: 'Life Mission',
-        link: '/life-mission/'
-      }, {
-        text: 'Profile',
-        link: '/profile/'
-      }, {
-        text: 'Timeline',
-        link: '/timeline/'
+        text: "Life Mission",
+        link: "/life-mission/"
       },
       {
-        text: 'Github',
-        link: 'https://github.com/shunkakinoki/shunblog'
+        text: "Profile",
+        link: "/profile/"
       },
+      {
+        text: "Timeline",
+        link: "/timeline/"
+      },
+      {
+        text: "Github",
+        link: "https://github.com/shunkakinoki/shunblog"
+      }
     ],
     sidebar: [
       ["/life-mission/", "Life Mission"],
@@ -47,23 +54,27 @@ module.exports = {
       {
         title: "2020 Quarter",
         collapsable: true,
-        children: readQuarterFileList('2020')
+        children: readQuarterFileList("2020")
       },
       {
         title: "2020 Month",
         collapsable: true,
-        children: readMonthFileList('2020')
+        children: readMonthFileList("2020")
       },
       {
         title: "2020 Week",
         collapsable: true,
-        children: readWeekFileList('2020'),
+        children: readWeekFileList("2020")
       },
       {
         title: "2020/00",
         collapsable: true,
-        children: readDayFileList('2020', '00')
-      },
+        children: readDayFileList("2020", "00")
+      }
     ],
+    yuu: {
+      defaultDarkTheme: true,
+      defaultColorTheme: "blue"
+    }
   }
 };
