@@ -1,13 +1,5 @@
 name: Build
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-    paths:
-      - '**'
-  pull_request_review:
-    types: submitted, edited, dismissed
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
