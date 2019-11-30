@@ -45,24 +45,24 @@ module.exports = {
         children: readYearFileList()
       },
       {
-        title: "2019 Quarter",
+        title: "2020 Quarter",
         collapsable: true,
-        children: readQuarterFileList('2019')
+        children: readQuarterFileList('2020')
       },
       {
-        title: "2019 Month",
+        title: "2020 Month",
         collapsable: true,
-        children: readMonthFileList('2019')
+        children: readMonthFileList('2020')
       },
       {
-        title: "2019 Week",
+        title: "2020 Week",
         collapsable: true,
-        children: readWeekFileList('2019'),
+        children: readWeekFileList('2020'),
       },
       {
-        title: "2019/11",
+        title: "2020/00",
         collapsable: true,
-        children: readDayFileList('2019', '12')
+        children: readDayFileList('2020', '00')
       },
     ],
   }
