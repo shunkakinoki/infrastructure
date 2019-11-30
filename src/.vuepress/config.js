@@ -18,10 +18,17 @@ module.exports = {
       }
     ]
   ],
+  plugins: [
+    [
+      '@vuepress/google-analytics',
+      {
+        'ga': 'UA-134813374-5'
+      }
+    ]
+  ],
   themeConfig: {
     lastUpdated: "Last Updated",
-    nav: [
-      {
+    nav: [{
         text: "Home",
         link: "/"
       },
