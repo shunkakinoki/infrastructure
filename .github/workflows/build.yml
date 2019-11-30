@@ -6,6 +6,8 @@ on:
   pull_request:
     paths:
       - '**'
+  pull_request_review:
+    types: submitted, edited, dismissed
 jobs:
   build:
     runs-on: ubuntu-latest
