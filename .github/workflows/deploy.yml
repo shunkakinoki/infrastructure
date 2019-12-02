@@ -1,0 +1,34 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v1
+        with:
+          node-version: "12.x"
+      - name: Cache node modules
+        id: cache
+        uses: actions/cache@preview
+        with:
+          path: node_modules
+          key: node-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            node-
+      - name: Install dependencies with yarn
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: |
+          yarn install
+      - name: Build Vuepress Site
+        run: |
+          yarn run build
+      - name: Build and Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: src/.vuepress/dist
