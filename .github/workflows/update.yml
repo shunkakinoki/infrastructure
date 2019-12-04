@@ -8,9 +8,9 @@ jobs:
     steps:
       - name: Checkout from Repository
         id: checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v1.2.0
       - name: Checkout from shunkakinoki
-        uses: actions/checkout@master
+        uses: actions/checkout@v1.2.0
         with:
           path: tmp
           repository: shunkakinoki/shunkakinoki
