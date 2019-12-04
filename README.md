@@ -9,5 +9,3 @@
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-watergate.svg)](https://forthebadge.com)
 
 </div>
-
-# shunblog
