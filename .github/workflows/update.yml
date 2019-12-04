@@ -31,7 +31,7 @@ jobs:
             by [create-pull-request](https://github.com/peter-evans/create-pull-request)."
       - name: Create a Pull Request if Updated
         uses: peter-evans/create-pull-request@v1
-        env:
+        with:
           token: ${{ secrets.GITHUB_TOKEN }}
           author-email: shunkakinoki@gmail.com
           author-name: Shun Kakinoki
