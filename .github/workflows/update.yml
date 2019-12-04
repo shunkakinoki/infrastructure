@@ -8,9 +8,9 @@ jobs:
     steps:
       - name: Checkout from Repository
         id: checkout
-        uses: actions/checkout@v1.2.0
+        uses: actions/checkout@v1
       - name: Checkout from shunkakinoki
-        uses: actions/checkout@v1.2.0
+        uses: actions/checkout@v1
         with:
           path: tmp
           repository: shunkakinoki/shunkakinoki
@@ -30,13 +30,14 @@ jobs:
             This PR was auto-generated on $(date +%d-%m-%Y) \
             by [create-pull-request](https://github.com/peter-evans/create-pull-request)."
       - name: Create a Pull Request if Updated
-        uses: peter-evans/create-pull-request@v1.5.4
+        uses: peter-evans/create-pull-request@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          COMMIT_AUTHOR_EMAIL: shunkakinoki@gmail.com
-          COMMIT_AUTHOR_NAME: Shun Kakinoki
-          PULL_REQUEST_TITLE: ${{ steps.vars.outputs.pr_title }}
-          PULL_REQUEST_BODY: ${{ steps.vars.outputs.pr_body }}
-          PULL_REQUEST_BRANCH: sync
-          PULL_REQUEST_REVIEWERS: shunkakinoki
-          BRANCH_SUFFIX: short-commit-hash
+          token: ${{ secrets.GITHUB_TOKEN }}
+          author-email: shunkakinoki@gmail.com
+          author-name: Shun Kakinoki
+          title: ${{ steps.vars.outputs.pr_title }}
+          body: ${{ steps.vars.outputs.pr_body }}
+          assignees: shunkakinoki
+          reviewers: shunkakinoki
+          branch: sync
+          branch-suffix: short-commit-hash
