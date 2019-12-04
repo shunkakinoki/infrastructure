@@ -4,13 +4,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1.2.0
+      - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
         with:
           node-version: "12.x"
       - name: Cache node modules
         id: cache
-        uses: actions/cache@preview
+        uses: actions/cache@v1
         with:
           path: node_modules
           key: node-${{ hashFiles('**/yarn.lock') }}
