@@ -6,6 +6,7 @@
   "devDependencies": {
     "@vssue/vuepress-plugin-vssue": "^1.2.2",
     "@vuepress/plugin-google-analytics": "^1.2.0",
+    "@vuepress/plugin-search": "^1.2.0",
     "vuepress": "^1.0.0-alpha.30",
     "vuepress-plugin-rss-support": "^1.0.2",
     "vuepress-theme-yuu": "^2.2.1"

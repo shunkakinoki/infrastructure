@@ -23,6 +23,9 @@ module.exports = {
       '@vuepress/google-analytics',
       {
         'ga': 'UA-134813374-5'
+      },
+      '@vuepress/search', {
+        searchMaxSuggestions: 30
       }
     ]
   ],
