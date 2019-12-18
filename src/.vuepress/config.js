@@ -5,7 +5,7 @@ const readQuarterFileList = require("../../scripts/quarter.js");
 const readYearFileList = require("../../scripts/year.js");
 
 module.exports = {
-  title: "shunblog",
+  title: "blog",
   description: "Life Mission",
   base: "/",
   theme: "yuu",
@@ -35,8 +35,7 @@ module.exports = {
   ],
   themeConfig: {
     lastUpdated: "Last Updated",
-    nav: [
-      {
+    nav: [{
         text: "Home",
         link: "/"
       },
@@ -54,7 +53,7 @@ module.exports = {
       },
       {
         text: "Github",
-        link: "https://github.com/shunkakinoki/shunblog"
+        link: "https://github.com/shunkakinoki/blog"
       }
     ],
     sidebar: [
