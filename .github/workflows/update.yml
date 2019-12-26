@@ -17,15 +17,15 @@ jobs:
           ref: master
       - name: Copy Repository Contents
         run: |
-          mkdir /home/runner/work/blog/tmp/.vuepress
-          cp -a $GITHUB_WORKSPACE/src/.vuepress/. /home/runner/work/blog/tmp/.vuepress/
-          rsync -aqu --delete /home/runner/work/blog/tmp/src/ $GITHUB_WORKSPACE/src
+          mkdir /home/runner/work/journal/tmp/.vuepress
+          cp -a $GITHUB_WORKSPACE/src/.vuepress/. /home/runner/work/journal/tmp/.vuepress/
+          rsync -aqu --delete /home/runner/work/journal/tmp/src/ $GITHUB_WORKSPACE/src
           mkdir $GITHUB_WORKSPACE/src/.vuepress
-          cp -a /home/runner/work/blog/tmp/.vuepress/. $GITHUB_WORKSPACE/src/.vuepress/
+          cp -a /home/runner/work/journal/tmp/.vuepress/. $GITHUB_WORKSPACE/src/.vuepress/
       - name: Set Output Variables
         id: vars
         run: |
-          echo ::set-output name=pr_title::"Sync Github Repo $(date +%d-%m-%Y)"
+          echo ::set-output name=pr_title::"Update Github Repo $(date +%d-%m-%Y)"
           echo ::set-output name=pr_body::"@shunkakinoki \
             This PR was auto-generated on $(date +%d-%m-%Y) \
             by [create-pull-request](https://github.com/peter-evans/create-pull-request)."
