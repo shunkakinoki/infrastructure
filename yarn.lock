@@ -719,12 +719,12 @@
     date-fns "^1.29.0"
     qs "^6.6.0"
 
-"@vssue/vuepress-plugin-vssue@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@vssue/vuepress-plugin-vssue/-/vuepress-plugin-vssue-1.4.0.tgz#865c648ae87a1f1c7e4220705c352f800166850b"
-  integrity sha512-sQibW4XdBehQnSAskLJ5rZcs60tC1MRYfDm1CiyOA/wv5XJ+8ZOpDCWZ9MgyqaAo7rkROeAjPhb54dUW54z4ug==
+"@vssue/vuepress-plugin-vssue@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@vssue/vuepress-plugin-vssue/-/vuepress-plugin-vssue-1.4.1.tgz#eba3421d57a3976b2e53eacd2fecfc723a2a819c"
+  integrity sha512-kwicPaR2bpHOXoh+HOpVH4KwBv2ln54ZppEOkw3IAAyQnm6eT+oj6eqXTiSmc0dynmaB+0sRmA0YFZDPRmn5jA==
   dependencies:
-    vssue "^1.4.0"
+    vssue "^1.4.1"
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.0.0":
   version "1.0.0"
@@ -7082,10 +7082,10 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.0.tgz#bd76d6a23323e2ca8ffa12028dc04559c75f9019"
   integrity sha512-iq+S7vZJE60yejDYM0ek6zg308+UZsdtPExWP9VZoCFCz1zkJoXFnAX7aZfd/ZwrkidzdUZL0C/ryW+JwAiIGw==
 
-vssue@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/vssue/-/vssue-1.4.0.tgz#7bb00f6e605d15b9e853967562fc29555bae248f"
-  integrity sha512-UpUsrsPIVlACR0dgUisy/DQRLX4lZU3kqBK21mFx7d7B6i8g8boLL2a3HPZurgWFbaK4TMV3XDGuLIf59KfvVw==
+vssue@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/vssue/-/vssue-1.4.1.tgz#2c6f7d0d0c1ad6870de8d5e9b986683193182a08"
+  integrity sha512-t0VaO06DPvhiOEEhvr0HCXGW3vGAyrhC0jh3WbnOcZpT43zY7XJVg/O8fCMBZTNmg+PbIJAxbYqgksakH5eB4g==
   dependencies:
     "@vssue/utils" "^1.4.0"
     github-markdown-css "^3.0.1"

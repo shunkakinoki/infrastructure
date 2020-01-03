@@ -4,7 +4,7 @@
     "build": "vuepress build src"
   },
   "devDependencies": {
-    "@vssue/vuepress-plugin-vssue": "^1.4.0",
+    "@vssue/vuepress-plugin-vssue": "^1.4.1",
     "@vuepress/plugin-active-header-links": "^1.2.0",
     "@vuepress/plugin-back-to-top": "^1.2.0",
     "@vuepress/plugin-google-analytics": "^1.2.0",
