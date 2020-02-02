@@ -83,7 +83,7 @@ module.exports = {
       {
         title: "2020/00",
         collapsable: true,
-        children: readDayFileList("2020", "00")
+        children: readDayFileList("2020", "02")
       }
     ],
     yuu: {
