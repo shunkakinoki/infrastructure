@@ -21,12 +21,11 @@ module.exports = {
   ga: 'UA-134813374-14',
   plugins: [
     [
+      '@vuepress/google-analytics', {
+        'ga': 'UA-134813374-14'
+      },
       "@vuepress/active-header-links",
       "@vuepress/back-to-top",
-      "@vuepress/google-analytics",
-      {
-        "ga": "UA-134813374-14"
-      },
       "@vuepress/search",
       {
         searchMaxSuggestions: 30
