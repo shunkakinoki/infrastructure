@@ -18,6 +18,7 @@ module.exports = {
       }
     ]
   ],
+  ga: 'UA-134813374-14',
   plugins: [
     [
       "@vuepress/active-header-links",
