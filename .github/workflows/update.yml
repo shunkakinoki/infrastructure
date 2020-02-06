@@ -17,11 +17,11 @@ jobs:
           ref: master
       - name: Copy Repository Contents
         run: |
-          mkdir /home/runner/work/blog/tmp/.vuepress
-          cp -a $GITHUB_WORKSPACE/src/.vuepress/. /home/runner/work/blog/tmp/.vuepress/
-          rsync -aqu --delete /home/runner/work/blog/tmp/src/ $GITHUB_WORKSPACE/src
+          mkdir /home/runner/work/journal/tmp/.vuepress
+          cp -a $GITHUB_WORKSPACE/src/.vuepress/. /home/runner/work/journal/tmp/.vuepress/
+          rsync -aqu --delete /home/runner/work/journal/tmp/src/ $GITHUB_WORKSPACE/src
           mkdir $GITHUB_WORKSPACE/src/.vuepress
-          cp -a /home/runner/work/blog/tmp/.vuepress/. $GITHUB_WORKSPACE/src/.vuepress/
+          cp -a /home/runner/work/journal/tmp/.vuepress/. $GITHUB_WORKSPACE/src/.vuepress/
       - name: Set Output Variables
         id: vars
         run: |
