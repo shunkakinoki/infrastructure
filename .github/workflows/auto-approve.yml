@@ -9,6 +9,8 @@ jobs:
           github.actor == 'shunkakinoki' ||
           github.actor == 'github-actions[bot]' ||
           github.actor == 'dependabot[bot]' ||
-          github.actor == 'dependabot-preview[bot]'
+          github.actor == 'dependabot-preview[bot]' ||
+          github.actor == 'imgbot' ||
+          github.actor == 'imgbot[bot]'
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
