@@ -5,7 +5,7 @@ const readQuarterFileList = require("../../scripts/quarter.js");
 const readYearFileList = require("../../scripts/year.js");
 
 module.exports = {
-  title: "blog",
+  title: "journal",
   description: "Life Mission",
   base: "/",
   theme: "yuu",
@@ -24,7 +24,7 @@ module.exports = {
       "@vuepress/back-to-top",
       "@vuepress/google-analytics",
       {
-        ga: "UA-134813374-5"
+        ga: "UA-134813374-14"
       },
       "@vuepress/search",
       {
@@ -53,7 +53,7 @@ module.exports = {
       },
       {
         text: "Github",
-        link: "https://github.com/shunkakinoki/blog"
+        link: "https://github.com/shunkakinoki/journal"
       }
     ],
     sidebar: [
