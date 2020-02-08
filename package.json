@@ -2,8 +2,7 @@
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src",
-    "test": "yarn run check",
-    "check": "eclint check $(git ls-files)",
+    "lint": "eclint check $(git ls-files)",
     "fix": "eclint fix $(git ls-files)"
   },
   "dependencies": {
