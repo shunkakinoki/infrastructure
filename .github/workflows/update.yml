@@ -6,15 +6,19 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout from Repository
-        id: checkout
-        uses: actions/checkout@v1
+      - name: Checkout from repo
+        uses: actions/checkout@v2
+        with:
+          path: main
       - name: Checkout from shunkakinoki
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
         with:
           path: tmp
-          repository: shunkakinoki/shunkakinoki
           ref: master
+          repository: shunkakinoki/shunkakinoki
+      - name: copy
+        run: |
+          ls
       - name: Copy Repository Contents
         run: |
           mkdir /home/runner/work/journal/tmp/.vuepress
