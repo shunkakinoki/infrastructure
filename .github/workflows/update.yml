@@ -10,7 +10,7 @@ jobs:
       - name: Checkout from repo
         uses: actions/checkout@v2
         with:
-          path: main
+          path: journal
       - name: Checkout from shunkakinoki
         uses: actions/checkout@v2
         with:
@@ -20,10 +20,10 @@ jobs:
       - name: Copy src directory
         run: |
           mkdir -p $GITHUB_WORKSPACE/tmp/.vuepress
-          cp -a $GITHUB_WORKSPACE/main/src/.vuepress/. $GITHUB_WORKSPACE/tmp/.vuepress/
-          rsync -aqu --delete $GITHUB_WORKSPACE/shunkakinoki/src $GITHUB_WORKSPACE/main/src
-          mkdir $GITHUB_WORKSPACE/main/src/.vuepress
-          cp -a $GITHUB_WORKSPACE/tmp/.vuepress/. $GITHUB_WORKSPACE/main/src/.vuepress/
+          cp -a $GITHUB_WORKSPACE/journal/src/.vuepress/. $GITHUB_WORKSPACE/tmp/.vuepress/
+          rsync -aqu --delete $GITHUB_WORKSPACE/shunkakinoki/src $GITHUB_WORKSPACE/journal/src
+          mkdir $GITHUB_WORKSPACE/journal/src/.vuepress
+          cp -a $GITHUB_WORKSPACE/tmp/.vuepress/. $GITHUB_WORKSPACE/journal/src/.vuepress/
       - name: Set output variables
         id: vars
         run: |
@@ -43,4 +43,4 @@ jobs:
           reviewers: shunkakinoki
           branch: sync
           branch-suffix: short-commit-hash
-          path: main
+          path: journal
