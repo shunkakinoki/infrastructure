@@ -1,7 +1,7 @@
-name: Build
+name: Yarn
 on: push
 jobs:
-  build:
+  yarn:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
