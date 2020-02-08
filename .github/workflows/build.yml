@@ -20,6 +20,12 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           yarn install
-      - name: Build Vuepress Site
+      - name: Check yarn lint
+        run: |
+          yarn run lint
+      # - name: Run yarn test
+      #   run: |
+      #     yarn run test
+      - name: Build Vuepress site
         run: |
           yarn run build
