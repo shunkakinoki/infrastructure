@@ -17,13 +17,10 @@ jobs:
           path: shunkakinoki
           ref: master
           repository: shunkakinoki/shunkakinoki
-      - name: copy
-        run: |
-          ls
       - name: Copy src directory
         run: |
           mkdir -p $GITHUB_WORKSPACE/tmp/.vuepress
-          cp -a $GITHUB_WORKSPACE/main/src/.vuepress/. $GITHUB_WORKSPACE/tmp/.vuepress
+          cp -a $GITHUB_WORKSPACE/main/src/.vuepress/. $GITHUB_WORKSPACE/tmp/.vuepress/
           rsync -aqu --delete $GITHUB_WORKSPACE/shunkakinoki/src $GITHUB_WORKSPACE/main/src
           mkdir $GITHUB_WORKSPACE/main/src/.vuepress
           cp -a $GITHUB_WORKSPACE/tmp/.vuepress/. $GITHUB_WORKSPACE/main/src/.vuepress/
