@@ -14,35 +14,36 @@ jobs:
       - name: Checkout from shunkakinoki
         uses: actions/checkout@v2
         with:
-          path: tmp
+          path: shunkakinoki
           ref: master
           repository: shunkakinoki/shunkakinoki
       - name: copy
         run: |
           ls
-      - name: Copy Repository Contents
+      - name: Copy src directory
         run: |
-          mkdir /home/runner/work/journal/tmp/.vuepress
-          cp -a $GITHUB_WORKSPACE/src/.vuepress/. /home/runner/work/journal/tmp/.vuepress/
-          rsync -aqu --delete /home/runner/work/journal/tmp/src/ $GITHUB_WORKSPACE/src
-          mkdir $GITHUB_WORKSPACE/src/.vuepress
-          cp -a /home/runner/work/journal/tmp/.vuepress/. $GITHUB_WORKSPACE/src/.vuepress/
-      - name: Set Output Variables
+          mkdir -r $GITHUB_WORKSPACE/tmp/.vuepress
+          cp -a $GITHUB_WORKSPACE/main/src/.vuepress/. $GITHUB_WORKSPACE/tmp/.vuepress
+          rsync -aqu --delete $GITHUB_WORKSPACE/shunkakinoki/src $GITHUB_WORKSPACE/main/src
+          mkdir $GITHUB_WORKSPACE/main/src/.vuepress
+          cp -a $GITHUB_WORKSPACE/tmp/.vuepress/. $GITHUB_WORKSPACE/main/src/.vuepress/
+      - name: Set output variables
         id: vars
         run: |
           echo ::set-output name=pr_title::"Sync Github Repo $(date +%d-%m-%Y)"
           echo ::set-output name=pr_body::"@shunkakinoki \
             This PR was auto-generated on $(date +%d-%m-%Y) \
             by [create-pull-request](https://github.com/peter-evans/create-pull-request)."
-      - name: Create a Pull Request if Updated
+      - name: Create a pull request if updated
         uses: peter-evans/create-pull-request@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          author-email: shunkakinoki@gmail.com
-          author-name: Shun Kakinoki
+          committer: Shun Kakinoki <shunkakinoki@gmail.com>
+          author: Shun Kakinoki <shunkakinoki@gmail.com>
           title: ${{ steps.vars.outputs.pr_title }}
           body: ${{ steps.vars.outputs.pr_body }}
           assignees: shunkakinoki
           reviewers: shunkakinoki
           branch: sync
           branch-suffix: short-commit-hash
+          path: main
