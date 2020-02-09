@@ -37,8 +37,5 @@ jobs:
           author: Shun Kakinoki <shunkakinoki@gmail.com>
           title: ${{ steps.vars.outputs.pr_title }}
           body: ${{ steps.vars.outputs.pr_body }}
-          assignees: shunkakinoki
           reviewers: shunkakinoki
-          branch: sync
-          branch-suffix: short-commit-hash
           path: journal
