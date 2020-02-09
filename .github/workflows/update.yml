@@ -32,7 +32,7 @@ jobs:
       - name: Create a pull request if updated
         uses: peter-evans/create-pull-request@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
           committer: Shun Kakinoki <shunkakinoki@gmail.com>
           author: Shun Kakinoki <shunkakinoki@gmail.com>
           title: ${{ steps.vars.outputs.pr_title }}
