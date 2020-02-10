@@ -728,20 +728,20 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
   integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
 
-"@vssue/utils@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@vssue/utils/-/utils-1.1.1.tgz#77ee2ef25e02ce49505a218d736aebc0d4050519"
-  integrity sha512-M8BGS0NpOkVeYFvisgK/TxdE/B52MSjoIJT04ePa8LS+FgvWLsr/Oqr/FoDAuftUEIK/ojUgOsykmeR+SUoYFg==
+"@vssue/utils@^1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@vssue/utils/-/utils-1.4.0.tgz#3cc2fd8492a3409e343289981e2209b6ca2f8313"
+  integrity sha512-3d9WCYNurdFKApFzU8i7YD1GCGhunEVYnwSJxwQ2rDmEdpLneAYNJWg9+QS6bqzB+Pw7ymtwLf/Sqti9+xUGqA==
   dependencies:
     date-fns "^1.29.0"
     qs "^6.6.0"
 
-"@vssue/vuepress-plugin-vssue@^1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@vssue/vuepress-plugin-vssue/-/vuepress-plugin-vssue-1.2.2.tgz#385d2d322f515adfe7f76955f5f7b6c0d546a920"
-  integrity sha512-BcxbOuM7xVSl4l9rdeAU0EQEhMTsYziEDT0x3L67Dmx6HFZdmgJsujovOMUEJkZQC9KXE26yhKc0xBqRcP2e5A==
+"@vssue/vuepress-plugin-vssue@^1.4.2":
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/@vssue/vuepress-plugin-vssue/-/vuepress-plugin-vssue-1.4.2.tgz#9cea4ec24ba0da2e1b0b516fb9f7d20e91c7ef45"
+  integrity sha512-FO+w3B7q48y5uDUjkY7NJORkq4cREavKL6YXJ1ohEeeXL06Fv9Db0FUY1fwSraFSiA1l+zTarImf9vzqMl+HMw==
   dependencies:
-    vssue "^1.2.2"
+    vssue "^1.4.2"
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.0.0":
   version "1.0.0"
@@ -8253,12 +8253,12 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.0.tgz#bd76d6a23323e2ca8ffa12028dc04559c75f9019"
   integrity sha512-iq+S7vZJE60yejDYM0ek6zg308+UZsdtPExWP9VZoCFCz1zkJoXFnAX7aZfd/ZwrkidzdUZL0C/ryW+JwAiIGw==
 
-vssue@^1.2.2:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/vssue/-/vssue-1.2.2.tgz#66f389e53ee45538bd2c69e4e2458b93cdc9672c"
-  integrity sha512-7aCKnn7ZIcdOz2S1f7JOYRcPw7LF/1LrKGb3aHOy2TqNzG9I1CkwB7+QXDbUV46O+rZB5fUwr7KRMpEvNvd5Ag==
+vssue@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/vssue/-/vssue-1.4.2.tgz#5968275c79a02f031a629548479edcdcc6232d84"
+  integrity sha512-DiuKrUQVKbxylLkMsFPsFpGn5GRtl6+kQTJLDEahDlj+p9Wqoea3klMGHaXyMdHR84riyLQ/gcMfcyOO2DUAGA==
   dependencies:
-    "@vssue/utils" "^1.1.1"
+    "@vssue/utils" "^1.4.0"
     github-markdown-css "^3.0.1"
     vue "^2.6.10"
     vue-i18n "^8.11.2"
