@@ -8,10 +8,7 @@
       "npmPublish": false,
       "tarballDir": "dist",
     }],
-    ["@semantic-release/git",{
-      "asdf": false,
-      "branch": add/semantic-release,
-    }],
+    "@semantic-release/git",
     "@semantic-release/github",
   ]
 }
