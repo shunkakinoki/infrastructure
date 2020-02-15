@@ -8,7 +8,6 @@
       "npmPublish": false,
       "tarballDir": "dist",
     }],
-    // "@semantic-release/git",
     "@semantic-release/github",
   ]
 }
