@@ -3,6 +3,7 @@ const readWeekFileList = require("../../scripts/week.js");
 const readMonthFileList = require("../../scripts/month.js");
 const readQuarterFileList = require("../../scripts/quarter.js");
 const readYearFileList = require("../../scripts/year.js");
+const readStrategyFileList = require("../../scripts/strategy.js");
 
 module.exports = {
   title: "journal",
@@ -59,6 +60,11 @@ module.exports = {
       ["/life-mission/", "Life Mission"],
       ["/profile/", "Profile"],
       ["/timeline/", "Timeline"],
+      {
+        title: "2020 Strategy",
+        collapsable: true,
+        children: readStrategyFileList("2020")
+      },
       {
         title: "Year",
         collapsable: true,
