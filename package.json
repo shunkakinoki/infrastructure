@@ -1,4 +1,8 @@
 {
+  "name": "shunkakinoki",
+  "author": "Shun Kakinoki",
+  "license": "MIT",
+  "homepage": "https://github.com/shunkakinoki/journal",
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src",
