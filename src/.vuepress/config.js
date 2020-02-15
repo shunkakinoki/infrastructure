@@ -60,6 +60,11 @@ module.exports = {
       ["/profile/", "Profile"],
       ["/timeline/", "Timeline"],
       {
+        title: "2020 Strategy",
+        collapsable: true,
+        children: readStrategyFileList("2020")
+      },
+      {
         title: "Year",
         collapsable: true,
         children: readYearFileList()
