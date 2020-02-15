@@ -1,5 +1,5 @@
 name: Yarn
-on: [push, pull_request]
+on: pull_request
 jobs:
   yarn:
     runs-on: ubuntu-latest
