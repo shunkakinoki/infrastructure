@@ -9,6 +9,7 @@
       "tarballDir": "dist",
     }],
     ["@semantic-release/git",{
+      "asdf": false,
       "branch": add/semantic-release,
     }],
     "@semantic-release/github",
