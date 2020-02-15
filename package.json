@@ -21,6 +21,8 @@
     "vuepress-theme-yuu": "^2.2.1"
   },
   "devDependencies": {
-    "eclint": "^2.8.1"
+    "@semantic-release/changelog": "^5.0.0",
+    "eclint": "^2.8.1",
+    "semantic-release": "^17.0.3"
   }
 }
