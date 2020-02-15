@@ -19,8 +19,8 @@ function readStrategyFileList(year) {
   files.forEach((item) => {
     const currentFile = item.slice(0, 2);
     fileList.push([
-      `/week/${year}/${currentFile}`,
-      `${year} Week ${currentFile}`,
+      `/strategy/${year}/${currentFile}`,
+      `${year} Strategy Week ${currentFile}`,
     ]);
   });
   return fileList.reverse();
