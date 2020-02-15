@@ -3,6 +3,7 @@ const readWeekFileList = require("../../scripts/week.js");
 const readMonthFileList = require("../../scripts/month.js");
 const readQuarterFileList = require("../../scripts/quarter.js");
 const readYearFileList = require("../../scripts/year.js");
+const readStrategyFileList = require("../../scripts/strategy.js");
 
 module.exports = {
   title: "journal",
