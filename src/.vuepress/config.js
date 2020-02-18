@@ -61,7 +61,7 @@ module.exports = {
       ["/profile/", "Profile"],
       ["/timeline/", "Timeline"],
       {
-        title: "2020 Strategy",
+        title: "Strategy 2020",
         collapsable: true,
         children: readStrategyFileList("2020")
       },
@@ -89,7 +89,7 @@ module.exports = {
         title: "2020/02",
         collapsable: true,
         children: readDayFileList("2020", "02")
-      }
+      },
     ],
     yuu: {
       defaultDarkTheme: true,
