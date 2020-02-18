@@ -14,8 +14,10 @@
     "test": "yarn run lint && yarn run release-test",
     "release": "semantic-release",
     "release-test": "semantic-release -d",
-    "lint": "eclint check $(git ls-files)",
-    "fix": "eclint fix $(git ls-files)"
+    "lint": "yarn eclint-check",
+    "fix": "yarn eclint-fix",
+    "eclint-check": "eclint check $(git ls-files)",
+    "eclint-fix": "eclint fix $(git ls-files)"
   },
   "dependencies": {
     "@vssue/vuepress-plugin-vssue": "^1.4.2",
