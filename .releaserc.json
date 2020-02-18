@@ -5,6 +5,12 @@
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "git checkout -b auto-semantic-release && git add -A && git commit 'auto-commit' && git push --set-upstream origin $(git branch-name)"
+      }
+    ],
+    [
       "@semantic-release/npm",
       {
         "npmPublish": false,
