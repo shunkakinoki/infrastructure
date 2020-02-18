@@ -25,7 +25,7 @@ jobs:
           cd $GITHUB_WORKSPACE/journal
           git config --global user.name 'Shun Kakinoki'
           git config --global user.email 'shunkakinoki@github.com'
-          git add -A && git commit -m "perf(update) auto journal pr" || true
+          git add -A && git commit -m "perf(update): auto journal pr" || true
       - name: Set output variables
         id: vars
         run: |
