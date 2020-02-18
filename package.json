@@ -5,7 +5,7 @@
   "homepage": "https://github.com/shunkakinoki/journal",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shunkakinoki/shunkakinoki.git"
+    "url": "https://github.com/shunkakinoki/journal.git"
   },
   "scripts": {
     "dev": "vuepress dev src",
