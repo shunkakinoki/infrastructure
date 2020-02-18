@@ -31,6 +31,7 @@
     "@semantic-release/changelog": "^5.0.0",
     "@semantic-release/exec": "^5.0.0",
     "eclint": "^2.8.1",
+    "gh": "^2.8.5",
     "semantic-release": "^17.0.4"
   }
 }
