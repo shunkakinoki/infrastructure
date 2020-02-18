@@ -34,5 +34,5 @@
     "gh": "^2.8.5",
     "semantic-release": "^17.0.4"
   },
-  "version": "2.0.5"
+  "version": "2.0.6"
 }
