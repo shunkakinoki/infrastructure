@@ -7,7 +7,7 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "git checkout -b auto-semantic-release && git add -A && git commit -m 'auto-commit' && git push --set-upstream origin auto-semantic-release"
+        "prepareCmd": "git checkout -b auto-semantic-release && git add -A && git commit -m 'auto-commit' && git push --set-upstream origin $(git branch-name) && gh pr --submit"
       }
     ],
     [
