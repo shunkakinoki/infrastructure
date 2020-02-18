@@ -25,6 +25,11 @@ jobs:
         run: |
           yarn install
       - name: Release
+        run: |
+          yarn run release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn run release
+      - name: Create a pull request if updated
+        uses: peter-evans/create-pull-request@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
