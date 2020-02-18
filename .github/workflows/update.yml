@@ -22,6 +22,7 @@ jobs:
           cp -a $GITHUB_WORKSPACE/journal/src/.vuepress/. $GITHUB_WORKSPACE/tmp/.vuepress/
           rsync -aqu --delete $GITHUB_WORKSPACE/shunkakinoki/src/ $GITHUB_WORKSPACE/journal/src
           cp -a $GITHUB_WORKSPACE/tmp/.vuepress/. $GITHUB_WORKSPACE/journal/src/.vuepress/
+          cd $GITHUB_WORKSPACE/journal
           git add -A && git commit -m "perf(update) auto journal pr" || true
       - name: Set output variables
         id: vars
