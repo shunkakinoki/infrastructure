@@ -23,8 +23,8 @@ jobs:
           rsync -aqu --delete $GITHUB_WORKSPACE/shunkakinoki/src/ $GITHUB_WORKSPACE/journal/src
           cp -a $GITHUB_WORKSPACE/tmp/.vuepress/. $GITHUB_WORKSPACE/journal/src/.vuepress/
           cd $GITHUB_WORKSPACE/journal
-          git config --global user.name 'GitHub'
-          git config --global user.email 'noreply@github.com'
+          git config --global user.name 'Shun Kakinoki'
+          git config --global user.email 'shunkakinoki@github.com'
           git add -A && git commit -m "perf(update) auto journal pr" || true
       - name: Set output variables
         id: vars
