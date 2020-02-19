@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/shunkakinoki/journal/compare/v2.0.10...v2.1.0) (2020-02-19)
+
+
+### Features
+
+* 🎸 release ([8cbc118](https://github.com/shunkakinoki/journal/commit/8cbc118b1cac1290d864cc6adfb749891c1bcbf5))
+
 ## [2.0.10](https://github.com/shunkakinoki/journal/compare/v2.0.9...v2.0.10) (2020-02-18)
 
 
