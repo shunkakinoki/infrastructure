@@ -1,3 +1,10 @@
+## [2.1.2](https://github.com/shunkakinoki/journal/compare/v2.1.1...v2.1.2) (2020-02-20)
+
+
+### Bug Fixes
+
+* **deps:** bump @vuepress/plugin-google-analytics from 1.3.0 to 1.3.1 ([735c9ad](https://github.com/shunkakinoki/journal/commit/735c9ada4daf14e285754aa9f433aeaa160ea7cd))
+
 # [2.1.0](https://github.com/shunkakinoki/journal/compare/v2.0.10...v2.1.0) (2020-02-19)
 
 
