@@ -1,3 +1,10 @@
+## [2.1.6](https://github.com/shunkakinoki/journal/compare/v2.1.5...v2.1.6) (2020-02-23)
+
+
+### Bug Fixes
+
+* 🐛 vuepress ([88d880a](https://github.com/shunkakinoki/journal/commit/88d880ad19393e46f136b5fb1a29e0d2d8311e57))
+
 ## [2.1.2](https://github.com/shunkakinoki/journal/compare/v2.1.1...v2.1.2) (2020-02-20)
 
 
