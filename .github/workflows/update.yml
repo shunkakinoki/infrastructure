@@ -19,9 +19,9 @@ jobs:
       - name: Copy src directory
         run: |
           mkdir -p $GITHUB_WORKSPACE/tmp/.vuepress
-          cp -a $GITHUB_WORKSPACE/journal/src/.vuepress/ $GITHUB_WORKSPACE/tmp/.vuepress
+          cp -a $GITHUB_WORKSPACE/journal/src/.vuepress/. $GITHUB_WORKSPACE/tmp/.vuepress/
           rsync -aqu --delete $GITHUB_WORKSPACE/shunkakinoki/journal/ $GITHUB_WORKSPACE/journal/src
-          cp -a $GITHUB_WORKSPACE/tmp/.vuepress/ $GITHUB_WORKSPACE/journal/src/.vuepress
+          cp -a $GITHUB_WORKSPACE/tmp/.vuepress/. $GITHUB_WORKSPACE/journal/src/.vuepress/
           cd $GITHUB_WORKSPACE/journal
       - name: Run git commit
         run: |
