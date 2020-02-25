@@ -1,3 +1,10 @@
+## [2.1.7](https://github.com/shunkakinoki/journal/compare/v2.1.6...v2.1.7) (2020-02-25)
+
+
+### Bug Fixes
+
+* 🐛 gha ([537fb57](https://github.com/shunkakinoki/journal/commit/537fb57c9eae7ca1e2494fdc9b448769c6310558))
+
 ## [2.1.2](https://github.com/shunkakinoki/journal/compare/v2.1.1...v2.1.2) (2020-02-20)
 
 
