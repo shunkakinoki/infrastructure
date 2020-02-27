@@ -21,8 +21,19 @@ module.exports = {
   ],
   plugins: [
     [
-      "@vuepress/google-analytics", {
+      "@vuepress/google-analytics",
+      {
         ga: "UA-134813374-14"
+      },
+      "vuepress-plugin-rss",
+      {
+        base_url: "/",
+        site_url: "https://journal.shunkakinoki.com",
+        count: 30
+      },
+      "sitemap",
+      {
+        hostname: "https://journal.shunkakinoki.com"
       },
       "@vuepress/active-header-links",
       "@vuepress/back-to-top",
@@ -89,7 +100,7 @@ module.exports = {
         title: "2020/02",
         collapsable: true,
         children: readDayFileList("2020", "02")
-      },
+      }
     ],
     yuu: {
       defaultDarkTheme: true,
