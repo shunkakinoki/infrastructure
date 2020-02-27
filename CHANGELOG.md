@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/shunkakinoki/journal/compare/v2.1.12...v2.2.0) (2020-02-27)
+
+
+### Features
+
+* 🎸 rss&xml ([f38954b](https://github.com/shunkakinoki/journal/commit/f38954bb11d80d156a3825c51b477a687d0b9de7))
+
 ## [2.1.12](https://github.com/shunkakinoki/journal/compare/v2.1.11...v2.1.12) (2020-02-27)
 
 
