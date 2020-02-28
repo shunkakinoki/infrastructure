@@ -1,7 +1,1 @@
 * @shunkakinoki
-
-/.github/workflows/ @shunkakinoki @dependabot[bot] @dependabot-preview[bot]
-package.json @shunkakinoki @dependabot[bot] @dependabot-preview[bot]
-yarn.lock @shunkakinoki @dependabot[bot] @dependabot-preview[bot]
-
-/src/ @shunkakinoki @github-actions[bot]
