@@ -16,5 +16,3 @@ yarn.lock @shunkakinoki @dependabot[bot] @dependabot-preview[bot]
 /src/pipenv/Pipfile.lock @shunkakinoki @dependabot[bot] @dependabot-preview[bot]
 /src/yarn/package.json @shunkakinoki @dependabot[bot] @dependabot-preview[bot]
 /src/yarn/yarn.lock @shunkakinoki @dependabot[bot] @dependabot-preview[bot]
-
-/src/ @shunkakinoki @github-actions[bot]
