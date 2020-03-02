@@ -1,11 +1,5 @@
-const {
-  resolve,
-} = require("path");
-const {
-  existsSync,
-  lstatSync,
-  readdirSync,
-} = require("fs");
+const {resolve} = require("path");
+const {existsSync, lstatSync, readdirSync} = require("fs");
 
 function readMonthFileList(year) {
   const fileList = [];
@@ -16,12 +10,9 @@ function readMonthFileList(year) {
   }
 
   const files = readdirSync(dirPath);
-  files.forEach((item) => {
+  files.forEach(item => {
     const currentFile = item.slice(0, 2);
-    fileList.push([
-      `/month/${year}/${currentFile}`,
-      `${year}/${currentFile}`,
-    ]);
+    fileList.push([`/month/${year}/${currentFile}`, `${year}/${currentFile}`]);
   });
   return fileList.reverse();
 }

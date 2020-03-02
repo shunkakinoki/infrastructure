@@ -1,16 +1,16 @@
 module.exports = {
   env: {
     browser: true,
-    jest: true
+    jest: true,
   },
   extends: "airbnb",
   parserOptions: {
-    sourceType: "module"
+    sourceType: "module",
   },
   rules: {
     indent: ["error", 2],
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "double"],
-    semi: ["error", "always"]
-  }
+    semi: ["error", "always"],
+  },
 };
