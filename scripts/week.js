@@ -1,11 +1,5 @@
-const {
-  resolve,
-} = require("path");
-const {
-  existsSync,
-  lstatSync,
-  readdirSync,
-} = require("fs");
+const {resolve} = require("path");
+const {existsSync, lstatSync, readdirSync} = require("fs");
 
 function readWeekFileList(year) {
   const fileList = [];
@@ -16,7 +10,7 @@ function readWeekFileList(year) {
   }
 
   const files = readdirSync(dirPath);
-  files.forEach((item) => {
+  files.forEach(item => {
     const currentFile = item.slice(0, 2);
     fileList.push([
       `/week/${year}/${currentFile}`,
