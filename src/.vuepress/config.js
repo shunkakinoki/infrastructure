@@ -102,6 +102,11 @@ module.exports = {
         collapsable: true,
         children: readDayFileList("2020", "02"),
       },
+      {
+        title: "2020/03",
+        collapsable: true,
+        children: readDayFileList("2020", "03"),
+      },
     ],
     yuu: {
       defaultDarkTheme: true,
