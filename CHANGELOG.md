@@ -1,3 +1,10 @@
+# [2.3.0](https://github.com/shunkakinoki/journal/compare/v2.2.4...v2.3.0) (2020-03-02)
+
+
+### Features
+
+* 🎸 prettier ([7345fd3](https://github.com/shunkakinoki/journal/commit/7345fd3374eba87404c7472ccbd052b029d41ae2))
+
 ## [2.2.4](https://github.com/shunkakinoki/journal/compare/v2.2.3...v2.2.4) (2020-03-02)
 
 
