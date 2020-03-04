@@ -72,6 +72,7 @@ module.exports = {
       ["/life-mission/", "Life Mission"],
       ["/profile/", "Profile"],
       ["/timeline/", "Timeline"],
+      ["/calendar/", "Calendar"],
       {
         title: "Strategy 2020",
         collapsable: true,
