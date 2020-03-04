@@ -1,3 +1,10 @@
+# [2.4.0](https://github.com/shunkakinoki/journal/compare/v2.3.7...v2.4.0) (2020-03-04)
+
+
+### Features
+
+* 🎸 style ([2c98d87](https://github.com/shunkakinoki/journal/commit/2c98d87d69c01f542e1ec5dd88e984ab570db176))
+
 ## [2.3.7](https://github.com/shunkakinoki/journal/compare/v2.3.6...v2.3.7) (2020-03-04)
 
 
