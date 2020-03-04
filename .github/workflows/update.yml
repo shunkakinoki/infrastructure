@@ -27,9 +27,7 @@ jobs:
         id: vars
         run: |
           echo ::set-output name=pr_title::"Sync Github Repo $(date +%d-%m-%Y)"
-          echo ::set-output name=pr_body::"@shunkakinoki \
-            This PR was auto-generated on $(date +%d-%m-%Y) \
-            by [create-pull-request](https://github.com/peter-evans/create-pull-request)."
+          echo ::set-output name=pr_body::"This PR was auto-generated on $(date +%d-%m-%Y)"
       - name: Create a pull request if updated
         uses: peter-evans/create-pull-request@v2
         with:
