@@ -1,3 +1,10 @@
+## [2.4.11](https://github.com/shunkakinoki/journal/compare/v2.4.10...v2.4.11) (2020-03-13)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump acorn from 6.3.0 to 6.4.1 ([d994426](https://github.com/shunkakinoki/journal/commit/d994426b127e87b47e8cc59f1421b73062fcb138))
+
 ## [2.4.10](https://github.com/shunkakinoki/journal/compare/v2.4.9...v2.4.10) (2020-03-13)
 
 
