@@ -1,3 +1,10 @@
+## [2.4.12](https://github.com/shunkakinoki/journal/compare/v2.4.11...v2.4.12) (2020-03-14)
+
+
+### Performance Improvements
+
+* **update:** auto journal pr ([d8c26b1](https://github.com/shunkakinoki/journal/commit/d8c26b116bc452bdd999297f1830b0ee602d83cc))
+
 ## [2.4.11](https://github.com/shunkakinoki/journal/compare/v2.4.10...v2.4.11) (2020-03-13)
 
 
