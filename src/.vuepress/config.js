@@ -99,14 +99,14 @@ module.exports = {
         children: readWeekFileList("2020"),
       },
       {
-        title: "2020/02",
-        collapsable: true,
-        children: readDayFileList("2020", "02"),
-      },
-      {
         title: "2020/03",
         collapsable: true,
         children: readDayFileList("2020", "03"),
+      },
+      {
+        title: "2020/02",
+        collapsable: true,
+        children: readDayFileList("2020", "02"),
       },
     ],
     yuu: {
