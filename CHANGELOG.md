@@ -1,3 +1,10 @@
+## [2.4.21](https://github.com/shunkakinoki/journal/compare/v2.4.20...v2.4.21) (2020-03-18)
+
+
+### Bug Fixes
+
+* **deps:** bump @vuepress/plugin-active-header-links from 1.3.1 to 1.4.0 ([c18023e](https://github.com/shunkakinoki/journal/commit/c18023e186f17d855386b37bdc7b0942730b542c))
+
 ## [2.4.19](https://github.com/shunkakinoki/journal/compare/v2.4.18...v2.4.19) (2020-03-17)
 
 
