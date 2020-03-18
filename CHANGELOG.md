@@ -1,3 +1,10 @@
+## [2.4.22](https://github.com/shunkakinoki/journal/compare/v2.4.21...v2.4.22) (2020-03-18)
+
+
+### Bug Fixes
+
+* **deps:** bump vuepress from 1.3.1 to 1.4.0 ([91755b1](https://github.com/shunkakinoki/journal/commit/91755b17b7ab56a07d28f47545a6b1936e514a23))
+
 ## [2.4.20](https://github.com/shunkakinoki/journal/compare/v2.4.19...v2.4.20) (2020-03-18)
 
 
