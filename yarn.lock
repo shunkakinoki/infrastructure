@@ -1147,12 +1147,12 @@
     date-fns "^1.29.0"
     qs "^6.6.0"
 
-"@vssue/vuepress-plugin-vssue@^1.4.2":
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/@vssue/vuepress-plugin-vssue/-/vuepress-plugin-vssue-1.4.2.tgz#9cea4ec24ba0da2e1b0b516fb9f7d20e91c7ef45"
-  integrity sha512-FO+w3B7q48y5uDUjkY7NJORkq4cREavKL6YXJ1ohEeeXL06Fv9Db0FUY1fwSraFSiA1l+zTarImf9vzqMl+HMw==
+"@vssue/vuepress-plugin-vssue@^1.4.3":
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/@vssue/vuepress-plugin-vssue/-/vuepress-plugin-vssue-1.4.3.tgz#37bdb079b750e998591eb94b1e94374c0121c227"
+  integrity sha512-ZzfmGhz0Pn0T56j4DZf+HUC6xJ4opZ2CMT9TJFg9VeU83DuqunWHbji878Mtxz5beUn0rv3FXthjJ2KWHIGC6g==
   dependencies:
-    vssue "^1.4.2"
+    vssue "^1.4.3"
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.0.0":
   version "1.0.0"
@@ -1319,13 +1319,6 @@
     markdown-it-table-of-contents "^0.4.0"
     prismjs "^1.13.0"
 
-"@vuepress/plugin-active-header-links@^1.3.1", "@vuepress/plugin-active-header-links@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-active-header-links/-/plugin-active-header-links-1.4.0.tgz#b43fdad67ef42c383a84642f7914e22c56189089"
-  integrity sha512-UWnRcqJZnX1LaPHxESx4XkRVJCleWvdGlSVivRGNLZuV1xrxJzB6LC86SNMur+imoyzeQL/oIgKY1QFx710g8w==
-  dependencies:
-    lodash.debounce "^4.0.8"
-
 "@vuepress/plugin-active-header-links@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-active-header-links/-/plugin-active-header-links-1.4.0.tgz#b43fdad67ef42c383a84642f7914e22c56189089"
@@ -1351,13 +1344,6 @@
   integrity sha512-sNxCXDz7AO4yIAZTEGt9TaLpJ2E0dgJGWx79nDFKfvpITn+Q2p7dUzkyVVxXs3TWXffoElGdNj/xIL5AUkg2qg==
   dependencies:
     cross-spawn "^6.0.5"
-
-"@vuepress/plugin-nprogress@^1.3.1", "@vuepress/plugin-nprogress@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-nprogress/-/plugin-nprogress-1.4.0.tgz#90bb16ab8d43321e5911dea489986de25adb56d1"
-  integrity sha512-hJ9phJHONWWZqcWztbVtmmRjZduHQHIOBifUBvAfAGcuOBLVHqRnv3i7XD5UB3MIWPM1/bAoTA2TVs4sb9Wg4Q==
-  dependencies:
-    nprogress "^0.2.0"
 
 "@vuepress/plugin-nprogress@^1.4.0":
   version "1.4.0"
@@ -11553,10 +11539,10 @@ vm-browserify@^1.0.1:
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.0.tgz#bd76d6a23323e2ca8ffa12028dc04559c75f9019"
   integrity sha512-iq+S7vZJE60yejDYM0ek6zg308+UZsdtPExWP9VZoCFCz1zkJoXFnAX7aZfd/ZwrkidzdUZL0C/ryW+JwAiIGw==
 
-vssue@^1.4.2:
-  version "1.4.2"
-  resolved "https://registry.yarnpkg.com/vssue/-/vssue-1.4.2.tgz#5968275c79a02f031a629548479edcdcc6232d84"
-  integrity sha512-DiuKrUQVKbxylLkMsFPsFpGn5GRtl6+kQTJLDEahDlj+p9Wqoea3klMGHaXyMdHR84riyLQ/gcMfcyOO2DUAGA==
+vssue@^1.4.3:
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/vssue/-/vssue-1.4.3.tgz#861203a95e6b60fe2af661a07d800c0d51965e13"
+  integrity sha512-xGnsLahqREumXgHnZ92MzNbIfwYqz8fZUQVGTe5/b2tCWsF5pFhO51fv4FVVDvVUwF6NsT3Kzy4HTVvJK2at4A==
   dependencies:
     "@vssue/utils" "^1.4.0"
     github-markdown-css "^3.0.1"
