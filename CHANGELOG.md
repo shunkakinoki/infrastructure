@@ -1,3 +1,10 @@
+## [2.4.25](https://github.com/shunkakinoki/journal/compare/v2.4.24...v2.4.25) (2020-03-26)
+
+
+### Bug Fixes
+
+* **deps:** bump @vssue/vuepress-plugin-vssue from 1.4.2 to 1.4.3 ([141ba1d](https://github.com/shunkakinoki/journal/commit/141ba1d02e1671407d43820dc88b583a28c65636))
+
 ## [2.4.24](https://github.com/shunkakinoki/journal/compare/v2.4.23...v2.4.24) (2020-03-24)
 
 
