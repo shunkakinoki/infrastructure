@@ -36,7 +36,7 @@
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/exec": "^5.0.0",
-    "commitizen": "^4.1.0",
+    "commitizen": "^4.1.1",
     "eclint": "^2.8.1",
     "git-cz": "^4.3.1",
     "husky": "^4.2.5",
