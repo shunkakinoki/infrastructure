@@ -1,3 +1,10 @@
+## [2.4.31](https://github.com/shunkakinoki/journal/compare/v2.4.30...v2.4.31) (2020-05-06)
+
+
+### Bug Fixes
+
+* **deps:** bump vuepress-theme-yuu from 2.2.1 to 2.3.0 ([87b2176](https://github.com/shunkakinoki/journal/commit/87b2176dc3f6b28113b5416db46c58fd59439318))
+
 ## [2.4.29](https://github.com/shunkakinoki/journal/compare/v2.4.28...v2.4.29) (2020-04-15)
 
 
