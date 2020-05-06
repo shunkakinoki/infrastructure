@@ -31,7 +31,7 @@
     "vuepress": "^1.4.1",
     "vuepress-plugin-rss": "^2.0.0",
     "vuepress-plugin-sitemap": "^2.3.1",
-    "vuepress-theme-yuu": "^2.2.1"
+    "vuepress-theme-yuu": "^2.3.0"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^5.0.1",
