@@ -1352,10 +1352,17 @@
   dependencies:
     cross-spawn "^6.0.5"
 
-"@vuepress/plugin-nprogress@1.4.1", "@vuepress/plugin-nprogress@^1.4.1":
+"@vuepress/plugin-nprogress@1.4.1":
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-nprogress/-/plugin-nprogress-1.4.1.tgz#2a16217091102a2b4fddc1b09f5854ac4f80f992"
   integrity sha512-CIhIuIgKtvk/ULENjefkZAJQqUstdZcqiM/Gs8CDyTKJITpwyqoZcgolFZ+1ZofUQuHuqDj1hKKm3AQ1cG3cBA==
+  dependencies:
+    nprogress "^0.2.0"
+
+"@vuepress/plugin-nprogress@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-nprogress/-/plugin-nprogress-1.5.0.tgz#bbf5d331a4acc1d862e2c7143b3b7587c3e4f0cc"
+  integrity sha512-0xs5Y0igCpA03/WXBvo01crJLVkirglh+JAIZY+daJUdjY38u4FXtrxe4/Nq7Nwo++Qy/OGFCWoilukgzpL8tA==
   dependencies:
     nprogress "^0.2.0"
 
