@@ -38,7 +38,7 @@
     "@semantic-release/exec": "^5.0.0",
     "commitizen": "^4.1.2",
     "eclint": "^2.8.1",
-    "git-cz": "^4.3.1",
+    "git-cz": "^4.4.0",
     "husky": "^4.2.5",
     "semantic-release": "^17.0.7"
   },
