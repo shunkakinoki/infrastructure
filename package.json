@@ -22,7 +22,7 @@
     "prettier-fix": "prettier --write \"**/*.{js,jsx,json,ts,tsx,css,html,yml,yaml,scss,sass}\""
   },
   "dependencies": {
-    "@vssue/vuepress-plugin-vssue": "^1.4.4",
+    "@vssue/vuepress-plugin-vssue": "^1.4.5",
     "@vuepress/plugin-active-header-links": "^1.5.0",
     "@vuepress/plugin-back-to-top": "^1.3.1",
     "@vuepress/plugin-google-analytics": "^1.5.0",
