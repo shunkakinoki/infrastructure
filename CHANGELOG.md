@@ -1,3 +1,10 @@
+## [2.4.38](https://github.com/shunkakinoki/journal/compare/v2.4.37...v2.4.38) (2020-06-05)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump websocket-extensions from 0.1.3 to 0.1.4 ([af26bfb](https://github.com/shunkakinoki/journal/commit/af26bfb7c17448e479fe4ead6e39ec0a36ac67dd))
+
 ## [2.4.37](https://github.com/shunkakinoki/journal/compare/v2.4.36...v2.4.37) (2020-05-25)
 
 
