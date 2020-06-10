@@ -1319,14 +1319,7 @@
     markdown-it-table-of-contents "^0.4.0"
     prismjs "^1.13.0"
 
-"@vuepress/plugin-active-header-links@1.5.1":
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-active-header-links/-/plugin-active-header-links-1.5.1.tgz#707c9912496be123551bb7fbd6b598455bf04598"
-  integrity sha512-GGqmlJlIJ3NEkAi2Gzob6CemDL5o0cv4TRLvWzjW43H0Pj1idoOi0mbKXtWAIZ6QicrZupeJUMhy49qyipvSWQ==
-  dependencies:
-    lodash.debounce "^4.0.8"
-
-"@vuepress/plugin-active-header-links@^1.5.1":
+"@vuepress/plugin-active-header-links@1.5.1", "@vuepress/plugin-active-header-links@^1.5.1":
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-active-header-links/-/plugin-active-header-links-1.5.1.tgz#707c9912496be123551bb7fbd6b598455bf04598"
   integrity sha512-GGqmlJlIJ3NEkAi2Gzob6CemDL5o0cv4TRLvWzjW43H0Pj1idoOi0mbKXtWAIZ6QicrZupeJUMhy49qyipvSWQ==
@@ -1373,15 +1366,10 @@
   dependencies:
     "@vuepress/shared-utils" "1.5.1"
 
-"@vuepress/plugin-search@1.5.1":
+"@vuepress/plugin-search@1.5.1", "@vuepress/plugin-search@^1.5.1":
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-1.5.1.tgz#86496b39ae9210d62c14fc4f4c67f8c949239bb9"
   integrity sha512-JyYrTzDDZs6ANZgp7+DnuRTm3OB1LgrxUJriD5qLb7NXEDwWvJnf7noFxnp7j+yaMogCZN1IloTU0PLSLqub9A==
-
-"@vuepress/plugin-search@^1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-1.5.0.tgz#d47a29402945649b69aa6a9db15315075c1651ea"
-  integrity sha512-zZ7awYWzube+FwYQP2GcrCeoGUxcOWQm6cOaxQ9BiEn+M8sj4/fn18sKjGkzREQ+BVJguxHw0y29gUlvHALPhQ==
 
 "@vuepress/shared-utils@1.5.1":
   version "1.5.1"
