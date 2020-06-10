@@ -1,3 +1,10 @@
+## [2.4.41](https://github.com/shunkakinoki/journal/compare/v2.4.40...v2.4.41) (2020-06-10)
+
+
+### Bug Fixes
+
+* **deps:** bump @vuepress/plugin-google-analytics from 1.5.0 to 1.5.1 ([24c6e1c](https://github.com/shunkakinoki/journal/commit/24c6e1cbe70d6bdbdaf5ca86c5e506d010394125))
+
 ## [2.4.38](https://github.com/shunkakinoki/journal/compare/v2.4.37...v2.4.38) (2020-06-05)
 
 
