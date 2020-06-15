@@ -1373,10 +1373,15 @@
   dependencies:
     "@vuepress/shared-utils" "1.5.1"
 
-"@vuepress/plugin-search@1.5.1", "@vuepress/plugin-search@^1.5.1":
+"@vuepress/plugin-search@1.5.1":
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-1.5.1.tgz#86496b39ae9210d62c14fc4f4c67f8c949239bb9"
   integrity sha512-JyYrTzDDZs6ANZgp7+DnuRTm3OB1LgrxUJriD5qLb7NXEDwWvJnf7noFxnp7j+yaMogCZN1IloTU0PLSLqub9A==
+
+"@vuepress/plugin-search@^1.5.2":
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-search/-/plugin-search-1.5.2.tgz#b8d77b4300b2e84f3c9c0d94f0a98638245196c2"
+  integrity sha512-/n0W7lQhBCj7vrIhU6VL8ZlUnWBru83W4w0gGNxzXDzZ1AMRJRnQDamBjKAWNd+WMYz8LA2LbJy1rCCds1Mu2Q==
 
 "@vuepress/shared-utils@1.5.1":
   version "1.5.1"
