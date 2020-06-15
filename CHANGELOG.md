@@ -1,3 +1,10 @@
+## [2.4.45](https://github.com/shunkakinoki/journal/compare/v2.4.44...v2.4.45) (2020-06-15)
+
+
+### Bug Fixes
+
+* **deps:** bump @vuepress/plugin-active-header-links from 1.5.1 to 1.5.2 ([bed01c9](https://github.com/shunkakinoki/journal/commit/bed01c965269730d95fd051c5ed5afc923ea2fd2))
+
 ## [2.4.42](https://github.com/shunkakinoki/journal/compare/v2.4.41...v2.4.42) (2020-06-10)
 
 
