@@ -1,3 +1,10 @@
+## [2.4.44](https://github.com/shunkakinoki/journal/compare/v2.4.43...v2.4.44) (2020-06-15)
+
+
+### Bug Fixes
+
+* **deps:** bump @vuepress/plugin-search from 1.5.1 to 1.5.2 ([2d24f51](https://github.com/shunkakinoki/journal/commit/2d24f51a6def1fe0100ba13b3669ead51d6ffa02))
+
 ## [2.4.42](https://github.com/shunkakinoki/journal/compare/v2.4.41...v2.4.42) (2020-06-10)
 
 
