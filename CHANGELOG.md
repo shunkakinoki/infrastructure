@@ -1,3 +1,10 @@
+## [2.4.47](https://github.com/shunkakinoki/journal/compare/v2.4.46...v2.4.47) (2020-07-07)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump npm from 6.13.7 to 6.14.6 ([6c20765](https://github.com/shunkakinoki/journal/commit/6c20765fe3f130596e5fa846e239a9526154d700))
+
 ## [2.4.46](https://github.com/shunkakinoki/journal/compare/v2.4.45...v2.4.46) (2020-06-15)
 
 
