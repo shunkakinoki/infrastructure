@@ -1,3 +1,10 @@
+## [2.4.48](https://github.com/shunkakinoki/journal/compare/v2.4.47...v2.4.48) (2020-07-29)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump elliptic from 6.5.1 to 6.5.3 ([6ae5b1a](https://github.com/shunkakinoki/journal/commit/6ae5b1adc0f2c12d4f6d232f0155a50688666295))
+
 ## [2.4.47](https://github.com/shunkakinoki/journal/compare/v2.4.46...v2.4.47) (2020-07-07)
 
 
