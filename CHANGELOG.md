@@ -1,3 +1,10 @@
+## [2.4.58](https://github.com/shunkakinoki/journal/compare/v2.4.57...v2.4.58) (2020-08-23)
+
+
+### Bug Fixes
+
+* **deps:** bump @vuepress/plugin-nprogress from 1.5.3 to 1.5.4 ([ce0685c](https://github.com/shunkakinoki/journal/commit/ce0685c4f952bb77c9a05fc6331850db4c4a3982))
+
 ## [2.4.55](https://github.com/shunkakinoki/journal/compare/v2.4.54...v2.4.55) (2020-08-23)
 
 
