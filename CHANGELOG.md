@@ -1,3 +1,10 @@
+## [2.4.59](https://github.com/shunkakinoki/journal/compare/v2.4.58...v2.4.59) (2020-09-04)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump http-proxy from 1.18.0 to 1.18.1 ([9d45988](https://github.com/shunkakinoki/journal/commit/9d4598880833baf2cee014232a30a015cba610a6))
+
 ## [2.4.58](https://github.com/shunkakinoki/journal/compare/v2.4.57...v2.4.58) (2020-08-23)
 
 
