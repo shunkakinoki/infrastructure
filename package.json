@@ -39,7 +39,7 @@
     "commitizen": "^4.2.1",
     "eclint": "^2.8.1",
     "git-cz": "^4.7.1",
-    "husky": "^4.2.5",
+    "husky": "^4.3.0",
     "semantic-release": "^17.1.1"
   },
   "husky": {
