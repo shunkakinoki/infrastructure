@@ -1,3 +1,10 @@
+## [2.4.60](https://github.com/shunkakinoki/journal/compare/v2.4.59...v2.4.60) (2020-09-10)
+
+
+### Bug Fixes
+
+* **deps:** [security] bump node-fetch from 2.6.0 to 2.6.1 ([ad63fdd](https://github.com/shunkakinoki/journal/commit/ad63fdd69d8deab81bea656b4d111a6c9b1ae6cc))
+
 ## [2.4.59](https://github.com/shunkakinoki/journal/compare/v2.4.58...v2.4.59) (2020-09-04)
 
 
