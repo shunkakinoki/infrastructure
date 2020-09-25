@@ -1,3 +1,10 @@
+## [2.4.61](https://github.com/shunkakinoki/journal/compare/v2.4.60...v2.4.61) (2020-09-25)
+
+
+### Bug Fixes
+
+* **deps:** bump @vuepress/plugin-back-to-top from 1.5.4 to 1.6.0 ([5675cc5](https://github.com/shunkakinoki/journal/commit/5675cc5a092b7ab0dc2ac33f0c2c6b7ddce2add4))
+
 ## [2.4.60](https://github.com/shunkakinoki/journal/compare/v2.4.59...v2.4.60) (2020-09-10)
 
 
