@@ -1,11 +1,7 @@
-variable "environment" {
+variable "slack_aws_cost" {
   type = string
 }
 
-variable "firebase_client_email" {
-  type = string
-}
-
-variable "firebase_private_key" {
+variable "slack_aws_cost_log" {
   type = string
 }
