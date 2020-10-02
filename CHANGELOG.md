@@ -1,3 +1,9 @@
+## [2.10.1](https://github.com/shunkakinoki/infrastructure/compare/v2.10.0...v2.10.1) (2020-10-02)
+
+### Performance Improvements
+
+- ⚡️ repo ([7880208](https://github.com/shunkakinoki/infrastructure/commit/7880208ddbb1f3a979131cb8180064337150228b))
+
 # [2.10.0](https://github.com/shunkakinoki/infrastructure/compare/v2.9.0...v2.10.0) (2020-10-02)
 
 ### Features
