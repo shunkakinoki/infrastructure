@@ -1,0 +1,28 @@
+name: Infrastructure
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/infrastructure.yml"
+      - "**.tf"
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        environment: [main]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: hashicorp/setup-terraform@v1
+        with:
+          cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
+          terraform_version: 0.13.4
+      - working-directory: environments/${{ matrix.environment }}
+        run: |
+          terraform fmt
+      - working-directory: environments/${{ matrix.environment }}
+        run: |
+          terraform init
+      - working-directory: environments/${{ matrix.environment }}
+        run: |
+          terraform validate

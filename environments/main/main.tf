@@ -8,35 +8,35 @@ provider "aws" {
 }
 
 module "aws-cloudfront" {
-  source = "../../modules/aws-cloudfront"
+  source = "../../aws/cloudfront"
 }
 
 module "aws-iam" {
-  source = "../../modules/aws-iam"
+  source = "../../aws/iam"
 }
 
 module "aws-k8s" {
-  source = "../../modules/aws-k8s"
+  source = "../../aws/k8s"
   providers = {
     aws = aws.west
   }
 }
 
-module "aws-lambda-cost" {
+module "aws-lambda" {
+  source             = "../../aws/lambda"
   slack_aws_cost     = var.slack_aws_cost
   slack_aws_cost_log = var.slack_aws_cost_log
-  source             = "../../modules/aws-lambda-cost"
 }
 
-module "aws-route-53" {
-  source = "../../modules/aws-route-53"
+module "aws-route53" {
+  source = "../../aws/route53"
 }
 
-module "aws-s3-bucket" {
-  source = "../../modules/aws-s3-bucket"
+module "aws-s3" {
+  source = "../../aws/s3"
 }
 
 module "aws-vpc" {
-  source = "../../modules/aws-vpc"
+  source = "../../aws/vpc"
   azs    = ["us-east-1a", "us-east-1b", "us-east-1c", "us-east-1d", "us-east-1e", "us-east-1f"]
 }
