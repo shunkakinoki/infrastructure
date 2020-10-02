@@ -4,7 +4,7 @@ terraform {
     organization = "shunkakinoki"
 
     workspaces {
-      name = "website"
+      name = "main"
     }
   }
 }
