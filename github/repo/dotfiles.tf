@@ -4,8 +4,8 @@ resource "github_repository" "dotfiles" {
   homepage_url   = ""
   default_branch = "master"
 
-  archived               = true
-  private                = false
+  archived               = false
+  visibility             = "public"
   has_issues             = true
   has_projects           = false
   has_wiki               = false
