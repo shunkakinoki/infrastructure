@@ -1,3 +1,9 @@
+## [2.12.1](https://github.com/shunkakinoki/infrastructure/compare/v2.12.0...v2.12.1) (2020-10-02)
+
+### Performance Improvements
+
+- ⚡️ remove auto approve ([7fd18fe](https://github.com/shunkakinoki/infrastructure/commit/7fd18fe81a123b36d36046db59fd4f12c84e1f9f))
+
 # [2.12.0](https://github.com/shunkakinoki/infrastructure/compare/v2.11.0...v2.12.0) (2020-10-02)
 
 ### Features
