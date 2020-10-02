@@ -1,3 +1,9 @@
+# [2.6.0](https://github.com/shunkakinoki/infrastructure/compare/v2.5.0...v2.6.0) (2020-10-02)
+
+### Features
+
+- 🎸 ini env main ([dfc4cd3](https://github.com/shunkakinoki/infrastructure/commit/dfc4cd3df0f0a1da47a1755e50bc9550b99bbef8))
+
 # [2.5.0](https://github.com/shunkakinoki/infrastructure/compare/v2.4.64...v2.5.0) (2020-10-02)
 
 ### Features
