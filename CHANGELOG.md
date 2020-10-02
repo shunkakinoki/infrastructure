@@ -1,3 +1,9 @@
+# [2.8.0](https://github.com/shunkakinoki/infrastructure/compare/v2.7.0...v2.8.0) (2020-10-02)
+
+### Features
+
+- 🎸 complete refactor module to aws ([7321072](https://github.com/shunkakinoki/infrastructure/commit/73210721dd7bf9884aea69b9d8c0ac32599fb80b))
+
 # [2.7.0](https://github.com/shunkakinoki/infrastructure/compare/v2.6.0...v2.7.0) (2020-10-02)
 
 ### Features
