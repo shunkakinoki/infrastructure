@@ -1,3 +1,9 @@
+# [2.12.0](https://github.com/shunkakinoki/infrastructure/compare/v2.11.0...v2.12.0) (2020-10-02)
+
+### Features
+
+- 🎸 ini default main b ([954cdf7](https://github.com/shunkakinoki/infrastructure/commit/954cdf79e4783cf6b1530c6031ee943a160dd235))
+
 # [2.11.0](https://github.com/shunkakinoki/infrastructure/compare/v2.10.1...v2.11.0) (2020-10-02)
 
 ### Features
