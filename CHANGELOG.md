@@ -1,3 +1,14 @@
+# [2.7.0](https://github.com/shunkakinoki/infrastructure/compare/v2.6.0...v2.7.0) (2020-10-02)
+
+### Features
+
+- 🎸 ini modules path ([dbe68e8](https://github.com/shunkakinoki/infrastructure/commit/dbe68e8d5355ecb830778753c1f9c552e7f24db9))
+
+### Performance Improvements
+
+- ⚡️ ini ([e960dd9](https://github.com/shunkakinoki/infrastructure/commit/e960dd93c759e0c6e00eb560d9ba78dacb27921b))
+- ⚡️ variables ([775b126](https://github.com/shunkakinoki/infrastructure/commit/775b126bcc338e01a1c689fdeff8713ebd9a0e23))
+
 # [2.6.0](https://github.com/shunkakinoki/infrastructure/compare/v2.5.0...v2.6.0) (2020-10-02)
 
 ### Features
