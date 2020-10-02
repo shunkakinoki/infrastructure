@@ -1,7 +1,7 @@
 resource "github_repository" "website" {
   name           = "website"
   description    = "My Personal Website :smirk::eyes::hotsprings:"
-  homepage_url   = ""
+  homepage_url   = "https://www.shunkakinoki.com"
   default_branch = "master"
 
   archived               = false
