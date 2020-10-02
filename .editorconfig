@@ -8,6 +8,3 @@ indent_style = space
 insert_final_newline = true
 quote_type = double
 trim_trailing_whitespace = true
-
-[*.lock]
-indent_size = unset
