@@ -1,3 +1,17 @@
+# [2.5.0](https://github.com/shunkakinoki/infrastructure/compare/v2.4.64...v2.5.0) (2020-10-02)
+
+### Features
+
+- 🎸 infrastructure ([8f83000](https://github.com/shunkakinoki/infrastructure/commit/8f830007bc295329511da12d8c0adf83404f0fae))
+
+### Performance Improvements
+
+- ⚡️ assets ([21f2a4f](https://github.com/shunkakinoki/infrastructure/commit/21f2a4ff8f7d66a9d059a385a2226b96eb195e19))
+- ⚡️ ini infrastructure image ([02e546e](https://github.com/shunkakinoki/infrastructure/commit/02e546e3d551f7ef54f7c63ab19e51c5b4a04e87))
+- ⚡️ ini release gha ([d1d0687](https://github.com/shunkakinoki/infrastructure/commit/d1d0687e0ffdc4ee278cbf533d1c217c0f3a30c7))
+- ⚡️ refactor package scripts ([fb4ac75](https://github.com/shunkakinoki/infrastructure/commit/fb4ac75da3a4bbf69629d131c9b81975d8902cff))
+- ⚡️ release ([488021a](https://github.com/shunkakinoki/infrastructure/commit/488021aa0257210480acabb3c74499f015695f7c))
+
 ## [2.4.61](https://github.com/shunkakinoki/journal/compare/v2.4.60...v2.4.61) (2020-09-25)
 
 ### Bug Fixes
