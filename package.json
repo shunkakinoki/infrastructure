@@ -1,50 +1,45 @@
 {
-  "name": "journal",
-  "author": "Shun Kakinoki",
-  "license": "MIT",
+  "name": "infrastructure",
   "version": "2.4.61",
-  "homepage": "https://github.com/shunkakinoki/journal",
+  "homepage": "https://github.com/shunkakinoki/infrastructure",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shunkakinoki/journal.git"
+    "url": "https://github.com/shunkakinoki/infrastructure.git"
   },
+  "license": "MIT",
+  "author": "Shun Kakinoki",
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src",
-    "test": "yarn run lint && yarn run release-test",
+    "check": "yarn run depcheck && yarn run lint && yarn run release:check",
+    "fix": "yarn run jsonsort:fix && yarn run sort-package-json:fix && yarn run prettier:fix",
+    "jsonsort:check": "jsonsort .devcontainer .vscode locales -a -c",
+    "jsonsort:fix": "jsonsort .devcontainer .vscode locales -a",
+    "lint": "yarn run jsonsort:check && yarn run sort-package-json:check && yarn run prettier:check",
+    "ncu:check": "ncu -p yarn",
+    "ncu:upgrade": "ncu -u -p yarn",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write .",
     "release": "semantic-release",
-    "release-test": "semantic-release -d",
-    "lint": "yarn eclint-check && yarn prettier-check",
-    "fix": "yarn eclint-fix && yarn prettier-fix",
-    "eclint-check": "eclint check $(git ls-files)",
-    "eclint-fix": "eclint fix $(git ls-files)",
-    "prettier-check": "prettier --check \"**/*.{js,jsx,json,ts,tsx,css,html,yml,yaml,scss,sass}\"",
-    "prettier-fix": "prettier --write \"**/*.{js,jsx,json,ts,tsx,css,html,yml,yaml,scss,sass}\""
-  },
-  "dependencies": {
-    "@vssue/vuepress-plugin-vssue": "^1.4.6",
-    "@vuepress/plugin-active-header-links": "^1.6.0",
-    "@vuepress/plugin-back-to-top": "^1.6.0",
-    "@vuepress/plugin-google-analytics": "^1.6.0",
-    "@vuepress/plugin-nprogress": "^1.5.4",
-    "@vuepress/plugin-search": "^1.5.4",
-    "vuepress": "^1.6.0",
-    "vuepress-plugin-rss": "^2.0.0",
-    "vuepress-plugin-sitemap": "^2.3.1",
-    "vuepress-theme-yuu": "^2.3.0"
-  },
-  "devDependencies": {
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/exec": "^5.0.0",
-    "commitizen": "^4.2.1",
-    "eclint": "^2.8.1",
-    "git-cz": "^4.7.1",
-    "husky": "^4.3.0",
-    "semantic-release": "^17.1.2"
+    "release:check": "semantic-release -d",
+    "sort-package-json:check": "sort-package-json 'package.json' 'packages/*/package.json' --check",
+    "sort-package-json:fix": "sort-package-json 'package.json' 'packages/*/package.json'"
   },
   "husky": {
     "hooks": {
       "prepare-commit-msg": "exec < /dev/tty && git-cz --hook || true"
     }
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/exec": "^5.0.0",
+    "@semantic-release/git": "^9.0.0",
+    "commitizen": "^4.2.1",
+    "depcheck": "^1.2.0",
+    "git-cz": "^4.7.1",
+    "husky": "^4.3.0",
+    "json-sort-cli": "^1.15.27",
+    "npm-check-updates": "^9.0.2",
+    "prettier": "^2.1.1",
+    "semantic-release": "^17.1.1",
+    "sort-package-json": "^1.44.0"
   }
 }

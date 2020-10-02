@@ -4,13 +4,14 @@ jobs:
   auto-approve:
     runs-on: ubuntu-latest
     steps:
-      - uses: hmarr/auto-approve-action@v2.0.0
-        if: |
-          github.actor == 'shunkakinoki' ||
-          github.actor == 'github-actions[bot]' ||
-          github.actor == 'dependabot[bot]' ||
-          github.actor == 'dependabot-preview[bot]' ||
-          github.actor == 'imgbot' ||
-          github.actor == 'imgbot[bot]'
+      - if: github.actor == 'shunkakinoki'
+        uses: actions/github-script@v3
         with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.pulls.createReview({
+              pull_number: ${{ github.event.pull_request.number }},
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              event: 'APPROVE',
+            })
