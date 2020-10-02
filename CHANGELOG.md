@@ -1,3 +1,9 @@
+# [2.11.0](https://github.com/shunkakinoki/infrastructure/compare/v2.10.1...v2.11.0) (2020-10-02)
+
+### Features
+
+- 🎸 remove branch protection ([e99bb77](https://github.com/shunkakinoki/infrastructure/commit/e99bb770b65f5dd4e44337343ac1fa02dfac5437))
+
 ## [2.10.1](https://github.com/shunkakinoki/infrastructure/compare/v2.10.0...v2.10.1) (2020-10-02)
 
 ### Performance Improvements
