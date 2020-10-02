@@ -3,7 +3,7 @@ on:
   pull_request:
     paths:
       - ".github/workflows/infrastructure.yml"
-      - "infrastructure/**"
+      - "**.tf"
 jobs:
   terraform:
     if: github.actor == 'sentrei-bot' || github.event_name == 'pull_request'
@@ -18,12 +18,12 @@ jobs:
         with:
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
           terraform_version: 0.13.0
-      - working-directory: infrastructure/environments/${{ matrix.environment }}
+      - working-directory: environments/${{ matrix.environment }}
         run: |
           terraform fmt
-      - working-directory: infrastructure/environments/${{ matrix.environment }}
+      - working-directory: environments/${{ matrix.environment }}
         run: |
           terraform init
-      - working-directory: infrastructure/environments/${{ matrix.environment }}
+      - working-directory: environments/${{ matrix.environment }}
         run: |
           terraform validate
