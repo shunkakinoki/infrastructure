@@ -2,7 +2,7 @@ resource "github_repository" "shunkakinoki" {
   name           = "shunkakinoki"
   description    = "My Life Journey Towards Obliterating the Galaxy :rocket::telescope::sunrise_over_mountains:"
   homepage_url   = ""
-  default_branch = "master"
+  default_branch = "main"
 
   archived               = false
   visibility             = "public"

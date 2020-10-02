@@ -2,7 +2,7 @@ resource "github_repository" "containers" {
   name           = "containers"
   description    = "My Personal Containers :notebook::whale::partly_sunny:"
   homepage_url   = ""
-  default_branch = "master"
+  default_branch = "main"
 
   archived               = false
   visibility             = "public"
