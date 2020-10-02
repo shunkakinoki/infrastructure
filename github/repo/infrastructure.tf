@@ -2,10 +2,10 @@ resource "github_repository" "infrastructure" {
   name           = "infrastructure"
   description    = "My Personal Infrastructure :blue_book::sunrise::dizzy:"
   homepage_url   = ""
-  default_branch = "main"
+  default_branch = "master"
 
   archived               = true
-  private                = true
+  private                = false
   has_issues             = true
   has_projects           = false
   has_wiki               = false
