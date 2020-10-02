@@ -2,7 +2,7 @@ resource "github_repository" "pitch" {
   name           = "pitch"
   description    = "My Pitch Deck :computer::bulb::memo:"
   homepage_url   = ""
-  default_branch = "master"
+  default_branch = "main"
 
   archived               = false
   visibility             = "public"

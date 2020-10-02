@@ -2,7 +2,7 @@ resource "github_repository" "dotfiles" {
   name           = "dotfiles"
   description    = "My Personal Dotfiles :zap::octocat::smile:"
   homepage_url   = ""
-  default_branch = "master"
+  default_branch = "main"
 
   archived               = false
   visibility             = "public"
