@@ -1,3 +1,9 @@
+# [2.9.0](https://github.com/shunkakinoki/infrastructure/compare/v2.8.0...v2.9.0) (2020-10-02)
+
+### Features
+
+- 🎸 ini github repo ([85c5ab6](https://github.com/shunkakinoki/infrastructure/commit/85c5ab65aafddf5078fe49b14708577fa45a239b))
+
 # [2.8.0](https://github.com/shunkakinoki/infrastructure/compare/v2.7.0...v2.8.0) (2020-10-02)
 
 ### Features
