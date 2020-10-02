@@ -1,6 +1,6 @@
-resource "github_repository" "infrastructure" {
-  name           = "infrastructure"
-  description    = "My Personal Infrastructure :blue_book::sunrise::dizzy:"
+resource "github_repository" "containers" {
+  name           = "containers"
+  description    = "My Personal Containers :notebook::whale::partly_sunny:"
   homepage_url   = ""
   default_branch = "master"
 
@@ -15,11 +15,11 @@ resource "github_repository" "infrastructure" {
   allow_rebase_merge     = false
   delete_branch_on_merge = true
 
-  topics = ["iaac", "infrastructure", "terraform"]
+  topics = ["iaac", "containers", "terraform"]
 }
 
-resource "github_branch_protection" "infrastructure_alpha" {
-  repository     = github_repository.infrastructure.name
+resource "github_branch_protection" "containers_alpha" {
+  repository     = github_repository.containers.name
   branch         = "alpha"
   enforce_admins = false
 
@@ -35,8 +35,8 @@ resource "github_branch_protection" "infrastructure_alpha" {
   }
 }
 
-resource "github_branch_protection" "infrastructure_beta" {
-  repository     = github_repository.infrastructure.name
+resource "github_branch_protection" "containers_beta" {
+  repository     = github_repository.containers.name
   branch         = "beta"
   enforce_admins = false
 
@@ -52,8 +52,8 @@ resource "github_branch_protection" "infrastructure_beta" {
   }
 }
 
-resource "github_branch_protection" "infrastructure_main" {
-  repository     = github_repository.infrastructure.name
+resource "github_branch_protection" "containers_main" {
+  repository     = github_repository.containers.name
   branch         = "main"
   enforce_admins = false
 

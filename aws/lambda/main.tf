@@ -1,6 +1,6 @@
 resource "null_resource" "aws_lambda_cost" {
   triggers = {
-    source_code_hash = "${filebase64sha256("${path.module}/main.py")}"
+    source_code_hash = filebase64sha256("${path.module}/main.py")
   }
 }
 

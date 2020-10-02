@@ -1,6 +1,6 @@
-resource "github_repository" "infrastructure" {
-  name           = "infrastructure"
-  description    = "My Personal Infrastructure :blue_book::sunrise::dizzy:"
+resource "github_repository" "shunkakinoki" {
+  name           = "shunkakinoki"
+  description    = "My Life Journey Towards Obliterating the Galaxy :rocket::telescope::sunrise_over_mountains:"
   homepage_url   = ""
   default_branch = "master"
 
@@ -15,11 +15,11 @@ resource "github_repository" "infrastructure" {
   allow_rebase_merge     = false
   delete_branch_on_merge = true
 
-  topics = ["iaac", "infrastructure", "terraform"]
+  topics = ["galaxy", "journey", "shunkakinoki"]
 }
 
-resource "github_branch_protection" "infrastructure_alpha" {
-  repository     = github_repository.infrastructure.name
+resource "github_branch_protection" "shunkakinoki_alpha" {
+  repository     = github_repository.shunkakinoki.name
   branch         = "alpha"
   enforce_admins = false
 
@@ -35,8 +35,8 @@ resource "github_branch_protection" "infrastructure_alpha" {
   }
 }
 
-resource "github_branch_protection" "infrastructure_beta" {
-  repository     = github_repository.infrastructure.name
+resource "github_branch_protection" "shunkakinoki_beta" {
+  repository     = github_repository.shunkakinoki.name
   branch         = "beta"
   enforce_admins = false
 
@@ -52,8 +52,8 @@ resource "github_branch_protection" "infrastructure_beta" {
   }
 }
 
-resource "github_branch_protection" "infrastructure_main" {
-  repository     = github_repository.infrastructure.name
+resource "github_branch_protection" "shunkakinoki_main" {
+  repository     = github_repository.shunkakinoki.name
   branch         = "main"
   enforce_admins = false
 
@@ -65,6 +65,6 @@ resource "github_branch_protection" "infrastructure_main" {
 
   required_status_checks {
     strict   = true
-    contexts = ["auto-approve", "yarn", "Terraform Cloud/sentrei/sentrei-main"]
+    contexts = ["auto-approve", "yarn"]
   }
 }
