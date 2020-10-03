@@ -1,3 +1,9 @@
+## [2.12.4](https://github.com/shunkakinoki/infrastructure/compare/v2.12.3...v2.12.4) (2020-10-03)
+
+### Performance Improvements
+
+- ⚡️ s3b ([bab0646](https://github.com/shunkakinoki/infrastructure/commit/bab0646329361ab9d3b8f2be15fa029ce5203874))
+
 ## [2.12.3](https://github.com/shunkakinoki/infrastructure/compare/v2.12.2...v2.12.3) (2020-10-03)
 
 ### Performance Improvements
