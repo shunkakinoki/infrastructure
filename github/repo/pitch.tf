@@ -1,7 +1,7 @@
 resource "github_repository" "pitch" {
   name           = "pitch"
   description    = "My Pitch Deck :computer::bulb::memo:"
-  homepage_url   = ""
+  homepage_url   = "https://pitch.shunkakinoki.com"
   default_branch = "main"
 
   archived               = false
