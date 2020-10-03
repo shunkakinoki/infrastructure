@@ -1,3 +1,9 @@
+## [2.12.2](https://github.com/shunkakinoki/infrastructure/compare/v2.12.1...v2.12.2) (2020-10-03)
+
+### Performance Improvements
+
+- ⚡️ dns ([5c714e4](https://github.com/shunkakinoki/infrastructure/commit/5c714e4f8705b5873ba0723849817b8ee4a08aaa))
+
 ## [2.12.1](https://github.com/shunkakinoki/infrastructure/compare/v2.12.0...v2.12.1) (2020-10-02)
 
 ### Performance Improvements
