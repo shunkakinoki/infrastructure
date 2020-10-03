@@ -45,7 +45,7 @@ resource "aws_route53_record" "pitch_shunkakinoki_com_CNAME" {
 resource "aws_route53_record" "www_shunkakinoki_com_CNAME" {
   zone_id = aws_route53_zone.shunkakinoki.zone_id
   name    = "www.${aws_route53_zone.shunkakinoki.name}"
-  type    = "A"
+  type    = "CNAME"
   records = ["cname.vercel-dns.com"]
   ttl     = "300"
 }
