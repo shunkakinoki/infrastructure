@@ -1,3 +1,9 @@
+## [2.12.3](https://github.com/shunkakinoki/infrastructure/compare/v2.12.2...v2.12.3) (2020-10-03)
+
+### Performance Improvements
+
+- ⚡️ cname ([ae1606f](https://github.com/shunkakinoki/infrastructure/commit/ae1606ffe97485dd7b1cd6cd2a3b8a254fa25bae))
+
 ## [2.12.2](https://github.com/shunkakinoki/infrastructure/compare/v2.12.1...v2.12.2) (2020-10-03)
 
 ### Performance Improvements
