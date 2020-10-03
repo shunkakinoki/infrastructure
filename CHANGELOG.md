@@ -1,3 +1,10 @@
+## [2.12.5](https://github.com/shunkakinoki/infrastructure/compare/v2.12.4...v2.12.5) (2020-10-03)
+
+### Performance Improvements
+
+- ⚡️ pitch ([14e6aba](https://github.com/shunkakinoki/infrastructure/commit/14e6aba49d656ffe378ccbf33086d6042c9d633d))
+- ⚡️ remove containers repo ([27113f2](https://github.com/shunkakinoki/infrastructure/commit/27113f2d8f7a2ae47b8ac886fff049ed107f867a))
+
 ## [2.12.4](https://github.com/shunkakinoki/infrastructure/compare/v2.12.3...v2.12.4) (2020-10-03)
 
 ### Performance Improvements
