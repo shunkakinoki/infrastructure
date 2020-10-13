@@ -1,3 +1,9 @@
+## [2.13.2](https://github.com/shunkakinoki/infrastructure/compare/v2.13.1...v2.13.2) (2020-10-13)
+
+### Performance Improvements
+
+- ⚡️ codespaces main branch ([18f1a79](https://github.com/shunkakinoki/infrastructure/commit/18f1a7943dd45f611ed9f99130c7df7dc3932a7c))
+
 ## [2.13.1](https://github.com/shunkakinoki/infrastructure/compare/v2.13.0...v2.13.1) (2020-10-13)
 
 ### Performance Improvements
