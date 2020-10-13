@@ -1,4 +1,4 @@
-name: sentrei
+name: infrastructure
 root: ~/ghq/github.com/shunkakinoki/infrastructure
 attach: true
 windows:
