@@ -2,7 +2,7 @@ resource "github_repository" "codespaces" {
   name           = "codespaces"
   description    = "My Personal Codespaces :notebook::whale::partly_sunny:"
   homepage_url   = ""
-  default_branch = "main"
+  default_branch = "master"
 
   archived               = false
   visibility             = "public"
