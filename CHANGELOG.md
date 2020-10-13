@@ -1,3 +1,13 @@
+# [2.13.0](https://github.com/shunkakinoki/infrastructure/compare/v2.12.5...v2.13.0) (2020-10-13)
+
+### Features
+
+- 🎸 ini codespaces repo ([5f58212](https://github.com/shunkakinoki/infrastructure/commit/5f582122fa4eb81fc5827e6383358593a9e5fca3))
+
+### Performance Improvements
+
+- ⚡️ ini tmuxinator ([85251fd](https://github.com/shunkakinoki/infrastructure/commit/85251fdc3b211443e2cbf4d6e4b9d929974bcd85))
+
 ## [2.12.5](https://github.com/shunkakinoki/infrastructure/compare/v2.12.4...v2.12.5) (2020-10-03)
 
 ### Performance Improvements
