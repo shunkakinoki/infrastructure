@@ -1,7 +1,18 @@
 {
-  "git.ignoreLimitWarning": true,
+  "dotfiles.installCommand": "~/dotfiles/install.sh",
+  "dotfiles.repository": "shunkakinoki/dotfiles",
+  "dotfiles.targetPath": "~/dotfiles",
   "peacock.color": "#c255af",
   "python.pythonPath": ".venv/bin/python",
+  "remote.containers.dotfiles.installCommand": "~/dotfiles/install.sh",
+  "remote.containers.dotfiles.repository": "https://github.com/shunkakinoki/dotfiles.git",
+  "remote.containers.dotfiles.targetPath": "~/dotfiles",
+  "terminal.integrated.env.linux": {
+    "ZSH_INIT_COMMAND": "mux start infrastructure"
+  },
+  "terminal.integrated.env.osx": {
+    "ZSH_INIT_COMMAND": "mux start infrastructure"
+  },
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#cf7bc1",
     "activityBar.activeBorder": "#d3dda2",
