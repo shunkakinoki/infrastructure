@@ -1,3 +1,9 @@
+# [2.14.0](https://github.com/shunkakinoki/infrastructure/compare/v2.13.2...v2.14.0) (2020-10-13)
+
+### Features
+
+- 🎸 ini dev container ([064ab91](https://github.com/shunkakinoki/infrastructure/commit/064ab9111cf840f10110826ecb46391906f71d31))
+
 ## [2.13.2](https://github.com/shunkakinoki/infrastructure/compare/v2.13.1...v2.13.2) (2020-10-13)
 
 ### Performance Improvements
