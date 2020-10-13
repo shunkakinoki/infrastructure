@@ -1,3 +1,9 @@
+## [2.13.1](https://github.com/shunkakinoki/infrastructure/compare/v2.13.0...v2.13.1) (2020-10-13)
+
+### Performance Improvements
+
+- ⚡️ ini codespaces repo ([df4f30c](https://github.com/shunkakinoki/infrastructure/commit/df4f30c323ad97e9a7cbb421e604e674bc0b7903))
+
 # [2.13.0](https://github.com/shunkakinoki/infrastructure/compare/v2.12.5...v2.13.0) (2020-10-13)
 
 ### Features
