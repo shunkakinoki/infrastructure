@@ -26,6 +26,14 @@ resource "aws_route53_record" "shunkakinoki_com_A" {
   }
 }
 
+resource "aws_route53_record" "pioneer_shunkakinoki_com_CNAME" {
+  zone_id = aws_route53_zone.shunkakinoki.zone_id
+  name    = "pioneer.${aws_route53_zone.shunkakinoki.name}"
+  type    = "CNAME"
+  records = ["hosting.gitbook.com"]
+  ttl     = "300"
+}
+
 resource "aws_route53_record" "pitch_shunkakinoki_com_CNAME" {
   zone_id = aws_route53_zone.shunkakinoki.zone_id
   name    = "pitch.${aws_route53_zone.shunkakinoki.name}"
