@@ -26,19 +26,19 @@ resource "aws_route53_record" "shunkakinoki_com_A" {
   }
 }
 
-resource "aws_route53_record" "blog_shunkakinoki_com_CNAME" {
-  zone_id = aws_route53_zone.shunkakinoki.zone_id
-  name    = "blog.${aws_route53_zone.shunkakinoki.name}"
-  type    = "CNAME"
-  records = ["shunkakinoki.github.io"]
-  ttl     = "300"
-}
-
 resource "aws_route53_record" "pitch_shunkakinoki_com_CNAME" {
   zone_id = aws_route53_zone.shunkakinoki.zone_id
   name    = "pitch.${aws_route53_zone.shunkakinoki.name}"
   type    = "CNAME"
   records = ["shunkakinoki.github.io"]
+  ttl     = "300"
+}
+
+resource "aws_route53_record" "wiki_shunkakinoki_com_CNAME" {
+  zone_id = aws_route53_zone.shunkakinoki.zone_id
+  name    = "wiki.${aws_route53_zone.shunkakinoki.name}"
+  type    = "CNAME"
+  records = ["hosting.gitbook.com"]
   ttl     = "300"
 }
 
