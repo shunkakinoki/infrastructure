@@ -1,3 +1,9 @@
+## [2.15.1](https://github.com/shunkakinoki/infrastructure/compare/v2.15.0...v2.15.1) (2020-12-29)
+
+### Performance Improvements
+
+- ⚡️ create master repo for shunkakinoki com ([2de1bda](https://github.com/shunkakinoki/infrastructure/commit/2de1bdac1c5d57f10937fc66f89dc8ae20515eb2))
+
 # [2.15.0](https://github.com/shunkakinoki/infrastructure/compare/v2.14.0...v2.15.0) (2020-12-29)
 
 ### Features
