@@ -1,3 +1,9 @@
+# [2.16.0](https://github.com/shunkakinoki/infrastructure/compare/v2.15.1...v2.16.0) (2020-12-29)
+
+### Features
+
+- 🎸 migrate to main ([14dd2ea](https://github.com/shunkakinoki/infrastructure/commit/14dd2ea06efbfb9a337fabbb5fc90c927c9f4cd8))
+
 ## [2.15.1](https://github.com/shunkakinoki/infrastructure/compare/v2.15.0...v2.15.1) (2020-12-29)
 
 ### Performance Improvements
