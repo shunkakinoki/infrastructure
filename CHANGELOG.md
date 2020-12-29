@@ -1,3 +1,13 @@
+# [2.15.0](https://github.com/shunkakinoki/infrastructure/compare/v2.14.0...v2.15.0) (2020-12-29)
+
+### Features
+
+- 🎸 rename website repo ([f2b5051](https://github.com/shunkakinoki/infrastructure/commit/f2b5051c50174fa9066f202f2980b14a15b38444))
+
+### Performance Improvements
+
+- ⚡️ rename repo file ([3453246](https://github.com/shunkakinoki/infrastructure/commit/3453246c79b39f7a138714d6231bd85c8dde0b70))
+
 # [2.14.0](https://github.com/shunkakinoki/infrastructure/compare/v2.13.2...v2.14.0) (2020-10-13)
 
 ### Features
