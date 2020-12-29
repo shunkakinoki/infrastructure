@@ -1,4 +1,4 @@
-resource "github_repository" "website" {
+resource "github_repository" "shunkakinoki-com" {
   name           = "shunkakinoki.com"
   description    = "My Personal Website :smirk::eyes::hotsprings:"
   homepage_url   = "https://www.shunkakinoki.com"
@@ -15,5 +15,5 @@ resource "github_repository" "website" {
   allow_rebase_merge     = false
   delete_branch_on_merge = true
 
-  topics = ["iaac", "website", "terraform"]
+  topics = ["nextjs", "tailwindcss", "typescripts"]
 }
