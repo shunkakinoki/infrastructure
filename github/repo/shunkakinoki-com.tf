@@ -15,5 +15,5 @@ resource "github_repository" "shunkakinoki-com" {
   allow_rebase_merge     = false
   delete_branch_on_merge = true
 
-  topics = ["nextjs", "tailwindcss", "typescripts"]
+  topics = ["nextjs", "tailwindcss", "typescript"]
 }
