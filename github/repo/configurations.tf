@@ -1,5 +1,5 @@
-resource "github_repository" "config" {
-  name           = "config"
+resource "github_repository" "configurations" {
+  name           = "configurations"
   description    = "My Personal Configurations :computer::bulb::memo:"
   default_branch = "master"
 
