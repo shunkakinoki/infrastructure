@@ -1,3 +1,9 @@
+## [2.17.1](https://github.com/shunkakinoki/infrastructure/compare/v2.17.0...v2.17.1) (2021-02-17)
+
+### Performance Improvements
+
+- ⚡️ ini config repo ([f70ac84](https://github.com/shunkakinoki/infrastructure/commit/f70ac84a65886d7ea926606e4a402adc03c060ef))
+
 # [2.17.0](https://github.com/shunkakinoki/infrastructure/compare/v2.16.0...v2.17.0) (2021-01-18)
 
 ### Features
