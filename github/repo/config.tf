@@ -1,7 +1,7 @@
 resource "github_repository" "config" {
   name           = "config"
   description    = "My Personal Configurations :computer::bulb::memo:"
-  default_branch = "main"
+  default_branch = "master"
 
   archived               = false
   visibility             = "public"
