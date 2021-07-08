@@ -2,6 +2,8 @@ pull_request_rules:
   - name: Renovate
     conditions:
       - author=renovate[bot]
+      - check-success=Terraform Cloud/shunkakinoki/main
+      - check-success=yarn
     actions:
       merge:
         method: merge
