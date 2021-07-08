@@ -2,6 +2,9 @@
   "name": "infrastructure",
   "version": "2.17.1",
   "homepage": "https://github.com/shunkakinoki/infrastructure",
+  "bugs": {
+    "url": "https://github.com/shunkakinoki/infrastructure/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/shunkakinoki/infrastructure.git"
@@ -10,36 +13,37 @@
   "author": "Shun Kakinoki",
   "scripts": {
     "check": "yarn run depcheck && yarn run lint && yarn run release:check",
+    "eslint:lint": "eslint . --config .eslintrc.js --ext .js,.ts,.tsx --cache --cache-location node_modules/.cache/eslint",
+    "eslint:fix": "eslint --fix . --config .eslintrc.js --ext .js,.ts,.tsx --cache --cache-location node_modules/.cache/eslint",
     "fix": "yarn run jsonsort:fix && yarn run sort-package-json:fix && yarn run prettier:fix",
     "jsonsort:check": "jsonsort .devcontainer .vscode locales -a -c",
     "jsonsort:fix": "jsonsort .devcontainer .vscode locales -a",
     "lint": "yarn run jsonsort:check && yarn run sort-package-json:check && yarn run prettier:check",
     "ncu:check": "ncu -p yarn",
     "ncu:upgrade": "ncu -u -p yarn",
+    "npm-package-json:lint": "npmPkgJsonLint .",
+    "postpublish": "pinst --enable",
+    "prepublishOnly": "pinst --disable",
     "prettier:check": "prettier --check .",
     "prettier:fix": "prettier --write .",
+    "prepare": "husky install",
     "release": "semantic-release",
     "release:check": "semantic-release -d",
     "sort-package-json:check": "sort-package-json 'package.json' 'packages/*/package.json' --check",
     "sort-package-json:fix": "sort-package-json 'package.json' 'packages/*/package.json'"
   },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git-cz --hook || true"
-    }
-  },
   "devDependencies": {
-    "@semantic-release/changelog": "^5.0.1",
-    "@semantic-release/exec": "^5.0.0",
-    "@semantic-release/git": "^9.0.0",
-    "commitizen": "^4.2.1",
-    "depcheck": "^1.2.0",
-    "git-cz": "^4.7.1",
-    "husky": "^4.3.0",
-    "json-sort-cli": "^1.15.27",
-    "npm-check-updates": "^9.0.2",
-    "prettier": "^2.1.1",
-    "semantic-release": "^17.2.3",
-    "sort-package-json": "^1.44.0"
+    "@shunkakinoki/commitlint": "^1.0.1",
+    "@shunkakinoki/depcheck": "^1.0.1",
+    "@shunkakinoki/dev": "^1.0.0",
+    "@shunkakinoki/eslint-config": "^1.0.3",
+    "@shunkakinoki/husky": "^1.0.2",
+    "@shunkakinoki/lint-staged": "^1.0.0",
+    "@shunkakinoki/npm-check-updates": "^1.0.1",
+    "@shunkakinoki/prettier": "^1.0.0",
+    "@shunkakinoki/semantic-release": "^1.1.0",
+    "@shunkakinoki/stylelint": "^1.0.1",
+    "@shunkakinoki/tsconfig": "^1.1.0",
+    "npm-package-json-lint-config-shunkakinoki": "^1.0.0"
   }
 }
