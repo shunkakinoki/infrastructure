@@ -1,3 +1,3 @@
-ignores: ["@semantic-release/*", "commitizen", "git-cz"]
+ignores: ["@shunkakinoki/*", "npm-package-json-lint-config-shunkakinoki"]
 ignore-path: .gitignore
 skip-missing: true
