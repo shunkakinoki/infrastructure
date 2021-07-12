@@ -27,9 +27,6 @@ resource "aws_route53_record" "shunkakinoki_com_A" {
   zone_id = aws_route53_zone.shunkakinoki.zone_id
   name    = aws_route53_zone.shunkakinoki.name
   type    = "A"
-  alias {
-    name                   = "76.76.21.21"
-    zone_id                = aws_route53_zone.shunkakinoki.zone_id
-    evaluate_target_health = false
-  }
+  records = ["76.76.21.21"]
+  ttl     = "300"
 }
