@@ -1,3 +1,9 @@
+## [2.17.2](https://github.com/shunkakinoki/infrastructure/compare/v2.17.1...v2.17.2) (2021-07-12)
+
+### Performance Improvements
+
+- delete route53 subdomains ([be9406a](https://github.com/shunkakinoki/infrastructure/commit/be9406a0aef59777aa414f4c9f2e40db44146a75))
+
 ## [2.17.1](https://github.com/shunkakinoki/infrastructure/compare/v2.17.0...v2.17.1) (2021-02-17)
 
 ### Performance Improvements
