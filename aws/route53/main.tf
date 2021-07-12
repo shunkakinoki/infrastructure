@@ -29,15 +29,7 @@ resource "aws_route53_record" "shunkakinoki_com_A" {
   type    = "A"
   alias {
     name                   = "76.76.21.21"
-    zone_id                = "Z2FDTNDATAQYW2"
+    zone_id                = aws_route53_zone.shunkakinoki.zone_id
     evaluate_target_health = false
   }
-}
-
-resource "aws_route53_record" "www_shunkakinoki_com_CNAME" {
-  zone_id = aws_route53_zone.shunkakinoki.zone_id
-  name    = "www.${aws_route53_zone.shunkakinoki.name}"
-  type    = "CNAME"
-  records = ["cname.vercel-dns.com"]
-  ttl     = "300"
 }
