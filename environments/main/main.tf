@@ -15,13 +15,6 @@ module "aws-iam" {
   source = "../../aws/iam"
 }
 
-module "aws-k8s" {
-  source = "../../aws/k8s"
-  providers = {
-    aws = aws.west
-  }
-}
-
 module "aws-lambda" {
   source             = "../../aws/lambda"
   slack_aws_cost     = var.slack_aws_cost
