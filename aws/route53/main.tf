@@ -28,7 +28,7 @@ resource "aws_route53_record" "shunkakinoki_com_A" {
   name    = aws_route53_zone.shunkakinoki.name
   type    = "A"
   alias {
-    name                   = "d2u1ftrxn4zlf1.cloudfront.net"
+    name                   = "76.76.21.21"
     zone_id                = "Z2FDTNDATAQYW2"
     evaluate_target_health = false
   }
