@@ -31,6 +31,14 @@ resource "aws_route53_record" "shunkakinoki_com_TXT" {
   ttl     = "300"
 }
 
+resource "aws_route53_record" "w_shunkakinoki_com_A" {
+  zone_id = aws_route53_zone.shunkakinoki.zone_id
+  name    = "w.${aws_route53_zone.shunkakinoki.name}"
+  type    = "A"
+  records = ["shunkakinoki.com.s3-website-us-east-1.amazonaws.com"]
+  ttl     = "300"
+}
+
 resource "aws_route53_record" "www_shunkakinoki_com_CNAME" {
   zone_id = aws_route53_zone.shunkakinoki.zone_id
   name    = "www.${aws_route53_zone.shunkakinoki.name}"
