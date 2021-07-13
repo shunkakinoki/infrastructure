@@ -55,9 +55,9 @@ resource "aws_route53_record" "shunkakinoki_com_TXT_keybase" {
   ttl     = "300"
 }
 
-resource "aws_route53_record" "pic__domainkey_shunkakinoki_com_TXT_keybase" {
+resource "aws_route53_record" "pic__domainkey_shunkakinoki_com_TXT" {
   zone_id = aws_route53_zone.shunkakinoki.zone_id
-  name    = aws_route53_zone.shunkakinoki.name
+  name    = "pic._domainkey.${aws_route53_zone.shunkakinoki.name}"
   type    = "TXT"
   records = ["k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC9dcj1hl4V2kmkZ/bSWM9kO38X1DuI8/K5yvHRNpyPbmnU3UKMSepa3aTW6QrJzj4/7aDZDPTS6QlSCEMj+tILL+8PyQCabYkhPHCQzNOiQOozkOm4opK/OoMRib+OMWUNJ/5/PPTCjicZYVCmmeqoTMOhmxceR2yltQGOmSHAQwIDAQAB"]
   ttl     = "300"
