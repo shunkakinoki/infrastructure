@@ -1,3 +1,10 @@
+## [2.17.3](https://github.com/shunkakinoki/infrastructure/compare/v2.17.2...v2.17.3) (2021-07-13)
+
+### Performance Improvements
+
+- refactor route53 mailgun ([62748ec](https://github.com/shunkakinoki/infrastructure/commit/62748ec6c448f297f6b895a5b91a7243ecd9d2b8))
+- update infrastructure gha ([84dd313](https://github.com/shunkakinoki/infrastructure/commit/84dd3134521c380d9d751634dbc77df46b74d224))
+
 ## [2.17.2](https://github.com/shunkakinoki/infrastructure/compare/v2.17.1...v2.17.2) (2021-07-12)
 
 ### Performance Improvements
