@@ -63,7 +63,7 @@ resource "aws_route53_record" "email_newsletter_shunkakinoki_com_CNAME" {
   ttl     = "300"
 }
 
-resource "aws_route53_record" "mx__domainkey_shunkakinoki_com_TXT" {
+resource "aws_route53_record" "mx__domainkey_newsletter_shunkakinoki_com_TXT" {
   zone_id = aws_route53_zone.shunkakinoki.zone_id
   name    = "mx._domainkey.newsletter.${aws_route53_zone.shunkakinoki.name}"
   type    = "TXT"
