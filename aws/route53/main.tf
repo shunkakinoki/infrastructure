@@ -37,7 +37,7 @@ data "aws_s3_bucket" "shunkakinoki_com" {
 
 resource "aws_route53_record" "w_shunkakinoki_com_A" {
   zone_id = aws_route53_zone.shunkakinoki.zone_id
-  name    = "w.${aws_route53_zone.shunkakinoki.name}"
+  name    = aws_route53_zone.shunkakinoki.name
   type    = "A"
 
   alias {
