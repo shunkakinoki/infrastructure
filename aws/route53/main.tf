@@ -39,7 +39,7 @@ resource "aws_route53_record" "shunkakinoki_com_MX_B" {
   ttl     = "300"
 }
 
-resource "aws_route53_record" "shunkakinoki_com_TXT_mailgun" {
+resource "aws_route53_record" "shunkakinoki_com_TXT" {
   zone_id = aws_route53_zone.shunkakinoki.zone_id
   name    = aws_route53_zone.shunkakinoki.name
   type    = "TXT"
@@ -47,13 +47,13 @@ resource "aws_route53_record" "shunkakinoki_com_TXT_mailgun" {
   ttl     = "300"
 }
 
-resource "aws_route53_record" "shunkakinoki_com_TXT_keybase" {
-  zone_id = aws_route53_zone.shunkakinoki.zone_id
-  name    = aws_route53_zone.shunkakinoki.name
-  type    = "TXT"
-  records = ["keybase-site-verification=o1E1Em_NqWB-miaYh0dAkPwdjYPU2AZj2XYw_2fqkAU"]
-  ttl     = "300"
-}
+# resource "aws_route53_record" "shunkakinoki_com_TXT" {
+#   zone_id = aws_route53_zone.shunkakinoki.zone_id
+#   name    = aws_route53_zone.shunkakinoki.name
+#   type    = "TXT"
+#   records = ["keybase-site-verification=o1E1Em_NqWB-miaYh0dAkPwdjYPU2AZj2XYw_2fqkAU"]
+#   ttl     = "300"
+# }
 
 resource "aws_route53_record" "pic__domainkey_shunkakinoki_com_TXT" {
   zone_id = aws_route53_zone.shunkakinoki.zone_id
