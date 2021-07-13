@@ -65,7 +65,7 @@ resource "aws_route53_record" "pic__domainkey_shunkakinoki_com_TXT" {
 
 resource "aws_route53_record" "email_shunkakinoki_com_CNAME" {
   zone_id = aws_route53_zone.shunkakinoki.zone_id
-  name    = "www.${aws_route53_zone.shunkakinoki.name}"
+  name    = "email.${aws_route53_zone.shunkakinoki.name}"
   type    = "CNAME"
   records = ["mailgun.org"]
   ttl     = "300"
