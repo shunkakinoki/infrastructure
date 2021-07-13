@@ -1,3 +1,9 @@
+## [2.17.4](https://github.com/shunkakinoki/infrastructure/compare/v2.17.3...v2.17.4) (2021-07-13)
+
+### Performance Improvements
+
+- ini newsletter subdomain ([6b6ee03](https://github.com/shunkakinoki/infrastructure/commit/6b6ee03ba13345c5bfa5d74f5223033303411d78))
+
 ## [2.17.3](https://github.com/shunkakinoki/infrastructure/compare/v2.17.2...v2.17.3) (2021-07-13)
 
 ### Performance Improvements
