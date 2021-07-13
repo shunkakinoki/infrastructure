@@ -39,7 +39,7 @@ resource "aws_route53_record" "www_shunkakinoki_com_CNAME" {
   ttl     = "300"
 }
 
-resource "aws_route53_record" "shunkakinoki_com_MX" {
+resource "aws_route53_record" "newsletter_shunkakinoki_com_MX" {
   zone_id = aws_route53_zone.shunkakinoki.zone_id
   name    = "newsletter.${aws_route53_zone.shunkakinoki.name}"
   type    = "MX"
@@ -63,7 +63,7 @@ resource "aws_route53_record" "email_newsletter_shunkakinoki_com_CNAME" {
   ttl     = "300"
 }
 
-resource "aws_route53_record" "pic__domainkey_shunkakinoki_com_TXT" {
+resource "aws_route53_record" "mx__domainkey_shunkakinoki_com_TXT" {
   zone_id = aws_route53_zone.shunkakinoki.zone_id
   name    = "mx._domainkey.newsletter.${aws_route53_zone.shunkakinoki.name}"
   type    = "TXT"
