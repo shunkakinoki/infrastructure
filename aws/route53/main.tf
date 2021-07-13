@@ -67,6 +67,6 @@ resource "aws_route53_record" "mx__domainkey_newsletter_shunkakinoki_com_TXT" {
   zone_id = aws_route53_zone.shunkakinoki.zone_id
   name    = "mx._domainkey.newsletter.${aws_route53_zone.shunkakinoki.name}"
   type    = "TXT"
-  records = ["k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC9dcj1hl4V2kmkZ/bSWM9kO38X1DuI8/K5yvHRNpyPbmnU3UKMSepa3aTW6QrJzj4/7aDZDPTS6QlSCEMj+tILL+8PyQCabYkhPHCQzNOiQOozkOm4opK/OoMRib+OMWUNJ/5/PPTCjicZYVCmmeqoTMOhmxceR2yltQGOmSHAQwIDAQAB"]
+  records = ["k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCu+a07Jb7uXs/ekmrFZUH71gPQMHe3EbW+zYI+QKAWh7bK5B0uTUJ5PxFJ9nurNPZ7FdJboaF/WQmJEwzLATfcYHXJr1o/xh9NQH3jf62B6CRWAB6oxKdAflZwn6rv8xBLxuL2NKQmDMfOY6zbNG68wI4s7T+ocNMoKYArePgvBwIDAQAB"]
   ttl     = "300"
 }
