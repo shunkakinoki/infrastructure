@@ -39,14 +39,6 @@ resource "aws_route53_record" "www_shunkakinoki_com_CNAME" {
   ttl     = "300"
 }
 
-resource "aws_route53_record" "newsletter_shunkakinoki_com_MX" {
-  zone_id = aws_route53_zone.shunkakinoki.zone_id
-  name    = "newsletter.${aws_route53_zone.shunkakinoki.name}"
-  type    = "MX"
-  records = ["mxa.mailgun.org", "mxb.mailgun.org"]
-  ttl     = "300"
-}
-
 resource "aws_route53_record" "newsletter_shunkakinoki_com_TXT" {
   zone_id = aws_route53_zone.shunkakinoki.zone_id
   name    = "newsletter.${aws_route53_zone.shunkakinoki.name}"
