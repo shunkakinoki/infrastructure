@@ -4,7 +4,7 @@ pull_request_rules:
       - author=renovate[bot]
       - check-success=Terraform Cloud/shunkakinoki/main
       - check-success=check
-      - check-success=infrastructure
+      - check-success=terraform(main)
     actions:
       merge:
         method: merge
