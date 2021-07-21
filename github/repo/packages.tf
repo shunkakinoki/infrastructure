@@ -1,6 +1,6 @@
-resource "github_repository" "scripts" {
-  name           = "scripts"
-  description    = "My Personal Scripts :notebook::whale::partly_sunny:"
+resource "github_repository" "packages" {
+  name           = "packages"
+  description    = "My Personal Packages :notebook::whale::partly_sunny:"
   homepage_url   = ""
   default_branch = "main"
 
@@ -15,5 +15,5 @@ resource "github_repository" "scripts" {
   allow_rebase_merge     = false
   delete_branch_on_merge = true
 
-  topics = ["docker", "personal", "scripts"]
+  topics = ["docker", "personal", "packages"]
 }
