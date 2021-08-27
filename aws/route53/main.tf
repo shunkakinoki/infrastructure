@@ -27,7 +27,7 @@ resource "aws_route53_record" "shunkakinoki_com_TXT" {
   zone_id = aws_route53_zone.shunkakinoki.zone_id
   name    = aws_route53_zone.shunkakinoki.name
   type    = "TXT"
-  records = ["keybase-site-verification=o1E1Em_NqWB-miaYh0dAkPwdjYPU2AZj2XYw_2fqkAU"]
+  records = ["a=0x4fd9D0eE6D6564E80A9Ee00c0163fC952d0A45Ed"]
   ttl     = "300"
 }
 
