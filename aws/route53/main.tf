@@ -90,3 +90,30 @@ resource "aws_route53_record" "_ens_shunkakinoki_com_TXT" {
   records = ["a=0x4fd9D0eE6D6564E80A9Ee00c0163fC952d0A45Ed"]
   ttl     = "300"
 }
+
+resource "aws_acm_certificate" "shunkakinoki_com" {
+  domain_name               = "shunkakinoki.com"
+  subject_alternative_names = ["*.shunkakinoki.com"]
+  validation_method         = "DNS"
+
+  lifecycle {
+    create_before_destroy = true
+  }
+}
+
+resource "aws_route53_record" "acl_shunkakinoki_com" {
+  for_each = {
+    for dvo in aws_acm_certificate.shunkakinoki_com.domain_validation_options : dvo.domain_name => {
+      name   = dvo.resource_record_name
+      record = dvo.resource_record_value
+      type   = dvo.resource_record_type
+    }
+  }
+
+  allow_overwrite = true
+  name            = each.value.name
+  records         = [each.value.record]
+  ttl             = 60
+  type            = each.value.type
+  zone_id         = aws_route53_zone.shunkakinoki_com.zone_id
+}
