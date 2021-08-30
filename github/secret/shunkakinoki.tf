@@ -9,8 +9,9 @@ data "github_repository" "shunkakinoki" {
 }
 
 data "aws_acm_certificate" "acl_shunkakinoki_com" {
-  domain   = "shunkakinoki.com"
-  statuses = ["ISSUED"]
+  domain      = "shunkakinoki.com"
+  most_recent = true
+  statuses    = ["ISSUED"]
 }
 
 resource "aws_iam_access_key" "aws" {
