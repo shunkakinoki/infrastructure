@@ -65,14 +65,14 @@ data "aws_iam_policy_document" "github" {
 }
 
 resource "aws_iam_group_policy" "github" {
-  name   = "github-${var.environment}"
+  name   = "github"
   group  = aws_iam_group.github.id
   policy = data.aws_iam_policy_document.github.json
 }
 
 resource "aws_iam_group" "github" {
-  name = "github-${var.environment}"
-  path = "/github/${var.environment}/"
+  name = "github"
+  path = "/github/"
 }
 
 resource "aws_iam_user_group_membership" "github" {
@@ -83,5 +83,5 @@ resource "aws_iam_user_group_membership" "github" {
 }
 
 resource "aws_iam_user" "github" {
-  name = "github-${var.environment}"
+  name = "github"
 }

@@ -1,5 +1,5 @@
 data "aws_iam_user" "aws" {
-  user_name = "github-${var.environment}"
+  user_name = "github"
 }
 
 data "aws_caller_identity" "aws" {}
