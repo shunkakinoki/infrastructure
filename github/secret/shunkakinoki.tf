@@ -8,6 +8,10 @@ data "github_repository" "shunkakinoki" {
   full_name = "shunkakinoki/shunkakinoki"
 }
 
+resource "aws_iam_access_key" "aws" {
+  user = data.aws_iam_user.aws.user_name
+}
+
 resource "github_actions_secret" "ACCESS_TOKEN" {
   repository  = data.github_repository.shunkakinoki.id
   secret_name = "ACCESS_TOKEN"
