@@ -13,8 +13,9 @@ resource "aws_iam_access_key" "aws" {
 }
 
 resource "github_actions_secret" "ACCESS_TOKEN" {
-  repository  = data.github_repository.shunkakinoki.id
-  secret_name = "ACCESS_TOKEN"
+  repository      = data.github_repository.shunkakinoki.id
+  secret_name     = "ACCESS_TOKEN"
+  plaintext_value = var.ACCESS_TOKEN
 
   lifecycle {
     create_before_destroy = true
@@ -70,8 +71,9 @@ resource "github_actions_secret" "DOCKER_PASSWORD" {
 }
 
 resource "github_actions_secret" "NOTION_API_KEY" {
-  repository  = data.github_repository.shunkakinoki.id
-  secret_name = "NOTION_API_KEY"
+  repository      = data.github_repository.shunkakinoki.id
+  secret_name     = "NOTION_API_KEY"
+  plaintext_value = var.NOTION_API_KEY
 
   lifecycle {
     create_before_destroy = true
@@ -79,8 +81,9 @@ resource "github_actions_secret" "NOTION_API_KEY" {
 }
 
 resource "github_actions_secret" "NPM_TOKEN" {
-  repository  = data.github_repository.shunkakinoki.id
-  secret_name = "NPM_TOKEN"
+  repository      = data.github_repository.shunkakinoki.id
+  secret_name     = "NPM_TOKEN"
+  plaintext_value = var.NPM_TOKEN
 
   lifecycle {
     create_before_destroy = true

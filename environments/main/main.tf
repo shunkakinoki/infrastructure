@@ -39,5 +39,8 @@ module "github-repo" {
 }
 
 module "github-secret" {
-  source = "../../github/secret"
+  source         = "../../github/secret"
+  ACCESS_TOKEN   = var.ACCESS_TOKEN
+  NPM_TOKEN      = var.NPM_TOKEN
+  NOTION_API_KEY = var.NOTION_API_KEY
 }
