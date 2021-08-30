@@ -7,10 +7,6 @@ provider "aws" {
   region = "us-west-2"
 }
 
-module "aws-cloudfront" {
-  source = "../../aws/cloudfront"
-}
-
 module "aws-iam" {
   source = "../../aws/iam"
 }
