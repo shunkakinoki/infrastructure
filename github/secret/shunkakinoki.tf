@@ -8,6 +8,11 @@ data "github_repository" "shunkakinoki" {
   full_name = "shunkakinoki/shunkakinoki"
 }
 
+data "aws_acm_certificate" "acl_shunkakinoki_com" {
+  domain   = "shunkakinoki.com"
+  statuses = ["ISSUED"]
+}
+
 resource "aws_iam_access_key" "aws" {
   user = data.aws_iam_user.aws.user_name
 }
@@ -16,6 +21,16 @@ resource "github_actions_secret" "ACCESS_TOKEN" {
   repository      = data.github_repository.shunkakinoki.id
   secret_name     = "ACCESS_TOKEN"
   plaintext_value = var.ACCESS_TOKEN
+
+  lifecycle {
+    create_before_destroy = true
+  }
+}
+
+resource "github_actions_secret" "AWS_ACL_ARN" {
+  repository      = data.github_repository.shunkakinoki.id
+  secret_name     = "AWS_ACL_ARN"
+  plaintext_value = data.aws_acm_certificate.acl_shunkakinoki_com.arn
 
   lifecycle {
     create_before_destroy = true
