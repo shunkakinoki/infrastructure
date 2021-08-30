@@ -42,9 +42,9 @@ resource "github_actions_secret" "AWS_ACCOUNT_NUMBER" {
 }
 
 resource "github_actions_secret" "AWS_SECRET_ACCESS_KEY" {
-  repository  = data.github_repository.shunkakinoki.id
-  secret_name = "AWS_SECRET_ACCESS_KEY"
-  # plaintext_value = aws_iam_access_key.aws.secret
+  repository      = data.github_repository.shunkakinoki.id
+  secret_name     = "AWS_SECRET_ACCESS_KEY"
+  plaintext_value = aws_iam_access_key.aws.secret
 
   lifecycle {
     create_before_destroy = true
