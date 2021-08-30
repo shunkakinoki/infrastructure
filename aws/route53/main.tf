@@ -115,5 +115,5 @@ resource "aws_route53_record" "acl_shunkakinoki_com" {
   records         = [each.value.record]
   ttl             = 60
   type            = each.value.type
-  zone_id         = aws_route53_zone.shunkakinoki_com_com.zone_id
+  zone_id         = aws_route53_zone.shunkakinoki_com.zone_id
 }
