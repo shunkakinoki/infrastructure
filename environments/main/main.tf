@@ -37,3 +37,7 @@ module "aws-vpc" {
 module "github-repo" {
   source = "../../github/repo"
 }
+
+module "github-secret" {
+  source = "../../github/secret"
+}
