@@ -89,3 +89,14 @@ resource "github_actions_secret" "NPM_TOKEN" {
     create_before_destroy = true
   }
 }
+
+resource "github_actions_secret" "VERCEL_TOKEN" {
+  repository      = data.github_repository.shunkakinoki.id
+  secret_name     = "VERCEL_TOKEN"
+  plaintext_value = var.VERCEL_TOKEN
+
+  lifecycle {
+    create_before_destroy = true
+  }
+}
+
