@@ -100,3 +100,22 @@ resource "github_actions_secret" "VERCEL_TOKEN" {
   }
 }
 
+resource "github_actions_secret" "VERCEL_ORG_ID" {
+  repository      = data.github_repository.shunkakinoki.id
+  secret_name     = "VERCEL_ORG_ID"
+  plaintext_value = var.VERCEL_ORG_ID
+
+  lifecycle {
+    create_before_destroy = true
+  }
+}
+
+resource "github_actions_secret" "VERCEL_PROJECT_ID" {
+  repository      = data.github_repository.shunkakinoki.id
+  secret_name     = "VERCEL_PROJECT_ID"
+  plaintext_value = var.VERCEL_PROJECT_ID
+
+  lifecycle {
+    create_before_destroy = true
+  }
+}

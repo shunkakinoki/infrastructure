@@ -39,9 +39,11 @@ module "github-repo" {
 }
 
 module "github-secret" {
-  source         = "../../github/secret"
-  ACCESS_TOKEN   = var.ACCESS_TOKEN
-  NPM_TOKEN      = var.NPM_TOKEN
-  NOTION_API_KEY = var.NOTION_API_KEY
-  VERCEL_TOKEN   = var.VERCEL_TOKEN
+  source            = "../../github/secret"
+  ACCESS_TOKEN      = var.ACCESS_TOKEN
+  NPM_TOKEN         = var.NPM_TOKEN
+  NOTION_API_KEY    = var.NOTION_API_KEY
+  VERCEL_TOKEN      = var.VERCEL_TOKEN
+  VERCEL_ORG_ID     = var.VERCEL_ORG_ID
+  VERCEL_PROJECT_ID = var.VERCEL_PROJECT_ID
 }

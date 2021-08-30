@@ -21,3 +21,11 @@ variable "NOTION_API_KEY" {
 variable "VERCEL_TOKEN" {
   type = string
 }
+
+variable "VERCEL_ORG_ID" {
+  type = string
+}
+
+variable "VERCEL_PROJECT_ID" {
+  type = string
+}
