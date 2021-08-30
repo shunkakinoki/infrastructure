@@ -3,6 +3,11 @@ resource "aws_s3_bucket" "shunkakinoki" {
   acl    = "private"
 }
 
+resource "aws_s3_bucket" "og_shunkakinoki" {
+  bucket = "og-shunkakinoki"
+  acl    = "private"
+}
+
 resource "aws_s3_bucket" "shunkakinoki_workspace" {
   bucket = "shunkakinoki-workspace"
   acl    = "private"
