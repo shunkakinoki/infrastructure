@@ -55,19 +55,11 @@ resource "aws_route53_record" "storybook_shunkakinoki_com_CNAME" {
   ttl     = "300"
 }
 
-resource "aws_route53_record" "newsletter_shunkakinoki_com_TXT" {
+resource "aws_route53_record" "newsletter_shunkakinoki_com_CNAME" {
   zone_id = aws_route53_zone.shunkakinoki_com.zone_id
   name    = "newsletter.${aws_route53_zone.shunkakinoki_com.name}"
-  type    = "TXT"
-  records = ["v=spf1 include:mailgun.org ~all"]
-  ttl     = "300"
-}
-
-resource "aws_route53_record" "email_newsletter_shunkakinoki_com_CNAME" {
-  zone_id = aws_route53_zone.shunkakinoki_com.zone_id
-  name    = "email.newsletter.${aws_route53_zone.shunkakinoki_com.name}"
   type    = "CNAME"
-  records = ["mailgun.org"]
+  records = ["www.getrevue.co"]
   ttl     = "300"
 }
 
