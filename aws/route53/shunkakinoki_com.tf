@@ -16,16 +16,16 @@ resource "aws_route53_record" "shunkakinoki_com" {
 }
 
 resource "aws_route53_record" "shunkakinoki_com_A" {
-  zone_id = aws_route53_zone.shunkakinoki.zone_id
-  name    = aws_route53_zone.shunkakinoki.name
+  zone_id = aws_route53_zone.shunkakinoki_com.zone_id
+  name    = aws_route53_zone.shunkakinoki_com.name
   type    = "A"
   records = ["76.76.21.21"]
   ttl     = "300"
 }
 
 resource "aws_route53_record" "www_shunkakinoki_com_CNAME" {
-  zone_id = aws_route53_zone.shunkakinoki.zone_id
-  name    = "www.${aws_route53_zone.shunkakinoki.name}"
+  zone_id = aws_route53_zone.shunkakinoki_com.zone_id
+  name    = "www.${aws_route53_zone.shunkakinoki_com.name}"
   type    = "CNAME"
   records = ["cname.vercel-dns.com"]
   ttl     = "300"
