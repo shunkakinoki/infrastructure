@@ -55,11 +55,11 @@ resource "aws_route53_record" "storybook_shunkakinoki_com_CNAME" {
   ttl     = "300"
 }
 
-resource "aws_route53_record" "tanaka_yusuke_san_2021_shunkakinoki_com_CNAME" {
+resource "aws_route53_record" "yusuketanaka_birthday_2021_shunkakinoki_com_CNAME" {
   zone_id = aws_route53_zone.shunkakinoki_com.zone_id
-  name    = "tanaka.yusuke.san.birthday.2021.${aws_route53_zone.shunkakinoki_com.name}"
+  name    = "yusuketanaka.birthday.2021.${aws_route53_zone.shunkakinoki_com.name}"
   type    = "CNAME"
-  records = ["www.getrevue.co"]
+  records = ["shunkakinoki.github.io"]
   ttl     = "300"
 }
 
