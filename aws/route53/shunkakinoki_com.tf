@@ -15,22 +15,6 @@ resource "aws_route53_record" "shunkakinoki_com" {
   ttl = "300"
 }
 
-resource "aws_route53_record" "shunkakinoki_com_A" {
-  zone_id = aws_route53_zone.shunkakinoki_com.zone_id
-  name    = aws_route53_zone.shunkakinoki_com.name
-  type    = "A"
-  records = ["76.76.21.21"]
-  ttl     = "300"
-}
-
-resource "aws_route53_record" "www_shunkakinoki_com_CNAME" {
-  zone_id = aws_route53_zone.shunkakinoki_com.zone_id
-  name    = "www.${aws_route53_zone.shunkakinoki_com.name}"
-  type    = "CNAME"
-  records = ["cname.vercel-dns.com"]
-  ttl     = "300"
-}
-
 resource "aws_route53_record" "shunkakinoki_com_TXT" {
   zone_id = aws_route53_zone.shunkakinoki_com.zone_id
   name    = aws_route53_zone.shunkakinoki_com.name
@@ -52,6 +36,14 @@ resource "aws_route53_record" "storybook_shunkakinoki_com_CNAME" {
   name    = "storybook.${aws_route53_zone.shunkakinoki_com.name}"
   type    = "CNAME"
   records = ["cname.vercel-dns.com"]
+  ttl     = "300"
+}
+
+resource "aws_route53_record" "tanaka_yusuke_san_2021_shunkakinoki_com_CNAME" {
+  zone_id = aws_route53_zone.shunkakinoki_com.zone_id
+  name    = "tanaka.yusuke.san.birthday.2021.${aws_route53_zone.shunkakinoki_com.name}"
+  type    = "CNAME"
+  records = ["www.getrevue.co"]
   ttl     = "300"
 }
 
