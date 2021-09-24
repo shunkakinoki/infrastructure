@@ -47,6 +47,14 @@ resource "aws_route53_record" "cal_shunkakinoki_com_CNAME" {
   ttl     = "300"
 }
 
+resource "aws_route53_record" "v_shunkakinoki_com_CNAME" {
+  zone_id = aws_route53_zone.shunkakinoki_com.zone_id
+  name    = "v.${aws_route53_zone.shunkakinoki_com.name}"
+  type    = "CNAME"
+  records = ["cname.vercel-dns.com"]
+  ttl     = "300"
+}
+
 resource "aws_route53_record" "vercel_shunkakinoki_com_CNAME" {
   zone_id = aws_route53_zone.shunkakinoki_com.zone_id
   name    = "vercel.${aws_route53_zone.shunkakinoki_com.name}"
