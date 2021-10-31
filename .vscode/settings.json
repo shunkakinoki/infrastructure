@@ -28,6 +28,7 @@
     "editorGroup.border": "#cf7bc1",
     "panel.border": "#cf7bc1",
     "sideBar.border": "#cf7bc1",
-    "tab.activeBorder": "#cf7bc1"
+    "tab.activeBorder": "#cf7bc1",
+    "sash.hoverBorder": "#cf7bc1"
   }
 }
