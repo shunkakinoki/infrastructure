@@ -71,7 +71,7 @@ resource "aws_iam_policy" "serverless" {
   policy = data.aws_iam_policy_document.serverless.json
 }
 
-data "aws_iam_policy_document" "serverless" {
+data "aws_iam_policy_document" "serverless_role" {
   statement {
     actions = ["sts:AssumeRole"]
 
@@ -86,9 +86,10 @@ data "aws_iam_policy_document" "serverless" {
 }
 
 resource "aws_iam_role" "serverless" {
-  name               = "serverless"
-  path               = "/serverless/"
-  assume_role_policy = data.aws_iam_policy_document.serverless.json
+  name                = "serverless"
+  path                = "/serverless/"
+  assume_role_policy  = data.aws_iam_policy_document.serverless_role.json
+  managed_policy_arns = [aws_iam_policy.serverless.arn]
 }
 
 resource "aws_iam_group_policy" "serverless" {
