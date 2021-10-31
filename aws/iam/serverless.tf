@@ -65,6 +65,12 @@ data "aws_iam_policy_document" "serverless" {
   }
 }
 
+resource "aws_iam_policy" "serverless" {
+  name   = "serverless"
+  path   = "/serverless/"
+  policy = data.aws_iam_policy_document.serverless.json
+}
+
 resource "aws_iam_group_policy" "serverless" {
   name   = "serverless"
   group  = aws_iam_group.serverless.id
