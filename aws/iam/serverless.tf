@@ -71,6 +71,26 @@ resource "aws_iam_policy" "serverless" {
   policy = data.aws_iam_policy_document.serverless.json
 }
 
+data "aws_iam_policy_document" "serverless" {
+  statement {
+    actions = ["sts:AssumeRole"]
+
+    principals {
+      type = "Service"
+      identifiers = [
+        "lambda.amazonaws.com",
+        "edgelambda.amazonaws.com"
+      ]
+    }
+  }
+}
+
+resource "aws_iam_role" "serverless" {
+  name               = "serverless"
+  path               = "/serverless/"
+  assume_role_policy = data.aws_iam_policy_document.serverless.json
+}
+
 resource "aws_iam_group_policy" "serverless" {
   name   = "serverless"
   group  = aws_iam_group.serverless.id
