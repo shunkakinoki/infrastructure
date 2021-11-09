@@ -3,6 +3,8 @@ resource "aws_route53_zone" "thisweekinweb3_com" {
 }
 
 resource "aws_route53_record" "thisweekinweb3_com" {
+  allow_overwrite = true
+
   zone_id = aws_route53_zone.thisweekinweb3_com.zone_id
   name    = aws_route53_zone.thisweekinweb3_com.name
   type    = "NS"
