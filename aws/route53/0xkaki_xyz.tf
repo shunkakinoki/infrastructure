@@ -68,3 +68,11 @@ resource "aws_route53_record" "_0xkaki_xyz_google__domainkey_TXT" {
 
   records = ["v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAopS++lxU5lkRsTdfUwp5CZFBkqtjnWyCg8o6ej42ucqDln/MEXcgK9FL+79Qs6lucyXeqR7rG6n35RkckE/NCD4+kwOqzbrv4H6fL0JMHsQDpj6VSv81G489d0idL/f//1+8OPYu2Uqaq7JBiaTDW/", "4WFrlKbTmn7PncpVdhHnLgA9zXpq9kOAbjSGwfnGIofS3yV5BG7Y21Me5N5M2Z54DqnrtEtLY1rZJmVkCAunOqc/IY7yEUyiaDR2DcqYGLy4kSkHPYvaiDgLIfM89RcLiRdq7s37bxCrL4FESr/fMzuTZwEKN6n6dLdG6Ns2oLkwlOX6x6BAI4BQU+8MtE/QIDAQAB"]
 }
+
+resource "aws_route53_record" "ffmrshf72cjk__0xkaki_xyz_CNAME" {
+  zone_id = aws_route53_zone._0xkaki_xyz.zone_id
+  name    = "ffmrshf72cjk.${aws_route53_zone._0xkaki_xyz.name}"
+  type    = "CNAME"
+  records = ["gv-7szyhyfghginwx.dv.googlehosted.com"]
+  ttl     = "300"
+}
