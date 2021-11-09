@@ -3,6 +3,8 @@ resource "aws_route53_zone" "_0xkaki_xyz" {
 }
 
 resource "aws_route53_record" "_0xkaki_xyz" {
+  allow_overwrite = true
+
   zone_id = aws_route53_zone._0xkaki_xyz.zone_id
   name    = aws_route53_zone._0xkaki_xyz.name
   type    = "NS"
