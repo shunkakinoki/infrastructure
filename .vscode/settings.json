@@ -25,9 +25,6 @@
     "titleBar.activeForeground": "#e7e7e7",
     "titleBar.inactiveBackground": "#c255af99",
     "titleBar.inactiveForeground": "#e7e7e799",
-    "editorGroup.border": "#cf7bc1",
-    "panel.border": "#cf7bc1",
-    "sideBar.border": "#cf7bc1",
     "tab.activeBorder": "#cf7bc1",
     "sash.hoverBorder": "#cf7bc1"
   }

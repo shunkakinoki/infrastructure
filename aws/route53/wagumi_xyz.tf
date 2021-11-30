@@ -1,0 +1,39 @@
+resource "aws_route53_zone" "wagumi_xyz" {
+  name = "wagumi.xyz"
+}
+
+resource "aws_route53_record" "wagumi_xyz" {
+  allow_overwrite = true
+
+  zone_id = aws_route53_zone.wagumi_xyz.zone_id
+  name    = aws_route53_zone.wagumi_xyz.name
+  type    = "NS"
+  records = [
+    aws_route53_zone.wagumi_xyz.name_servers.0,
+    aws_route53_zone.wagumi_xyz.name_servers.1,
+    aws_route53_zone.wagumi_xyz.name_servers.2,
+    aws_route53_zone.wagumi_xyz.name_servers.3,
+  ]
+  ttl = "300"
+}
+
+resource "aws_route53_record" "wagumi_xyz_A" {
+  zone_id = aws_route53_zone.wagumi_xyz.zone_id
+  name    = aws_route53_zone.wagumi_xyz.name
+  type    = "A"
+  records = [
+    "185.199.108.153",
+    "185.199.109.153",
+    "185.199.110.153",
+    "185.199.111.153",
+  ]
+  ttl = "300"
+}
+
+resource "aws_route53_record" "www_wagumi_xyz_CNAME" {
+  zone_id = aws_route53_zone.wagumi_xyz.zone_id
+  name    = "www.${aws_route53_zone.wagumi_xyz.name}"
+  type    = "CNAME"
+  records = ["wagumi.github.io"]
+  ttl     = "300"
+}
