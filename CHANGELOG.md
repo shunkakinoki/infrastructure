@@ -1,3 +1,9 @@
+## [2.17.5](https://github.com/shunkakinoki/infrastructure/compare/v2.17.4...v2.17.5) (2021-11-30)
+
+### Performance Improvements
+
+- ini wagumi xyz ([b83f379](https://github.com/shunkakinoki/infrastructure/commit/b83f379f3c71bce8d15816a934ecf962781a99d2))
+
 ## [2.17.4](https://github.com/shunkakinoki/infrastructure/compare/v2.17.3...v2.17.4) (2021-07-13)
 
 ### Performance Improvements
