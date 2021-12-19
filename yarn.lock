@@ -881,12 +881,12 @@
   dependencies:
     depcheck "^1.4.2"
 
-"@shunkakinoki/dev@^1.2.8":
-  version "1.2.8"
-  resolved "https://registry.yarnpkg.com/@shunkakinoki/dev/-/dev-1.2.8.tgz#4f5c28238d15532efaab7a2eeb039ce174cdabc3"
-  integrity sha512-xMM/FxajdS4zTLrD7DwqwD0NQTlwmSSPbIzLjd9khB6tMMAKPOmxy7ZoffxEgjQpklDXKb2iWfsqaTGVwlLtAQ==
+"@shunkakinoki/dev@^1.2.9":
+  version "1.2.9"
+  resolved "https://registry.yarnpkg.com/@shunkakinoki/dev/-/dev-1.2.9.tgz#049bdd2245b21e8fd62bb87ccc3d082227d9d2ea"
+  integrity sha512-kohuvH05NhoCCKj0k49D++DP42tKLUFk2s4TMqqYypJn2I15UFvwZCnsArFQZ9VsUigO5cX7mKwu/J4D0saW4A==
   dependencies:
-    concurrently "^6.4.0"
+    concurrently "^6.5.0"
     cross-env "^7.0.3"
     scripty "^2.0.0"
     sort-package-json "^1.53.1"
@@ -2155,10 +2155,10 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
-concurrently@^6.4.0:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/concurrently/-/concurrently-6.4.0.tgz#5387ee86be435a0eb51c292ade8a00acf479f170"
-  integrity sha512-HZ3D0RTQMH3oS4gvtYj1P+NBc6PzE2McEra6yEFcQKrUQ9HvtTGU4Dbne083F034p+LRb7kWU0tPRNvSGs1UCQ==
+concurrently@^6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/concurrently/-/concurrently-6.5.0.tgz#57082bfe797f93cf4a437ce54742c56823a8ea05"
+  integrity sha512-BjC0KYxXtO6EiWa46gfWYzcLULPBCb+5+VZFtzCemR/co0QSHU4mysEvmT6cnedPpQ9dtJzb+2G694o3V7TgLg==
   dependencies:
     chalk "^4.1.0"
     date-fns "^2.16.1"
