@@ -49,9 +49,9 @@ resource "aws_route53_record" "cats_wagumi_xyz_CNAME" {
   ttl     = "300"
 }
 
-resource "aws_route53_record" "vote_wagumi_xyz_CNAME" {
+resource "aws_route53_record" "gov_wagumi_xyz_CNAME" {
   zone_id = aws_route53_zone.wagumi_xyz.zone_id
-  name    = "vote.${aws_route53_zone.wagumi_xyz.name}"
+  name    = "gov.${aws_route53_zone.wagumi_xyz.name}"
   type    = "CNAME"
   records = ["snapshotpage.b-cdn.net"]
   ttl     = "300"
