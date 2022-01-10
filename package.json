@@ -42,7 +42,7 @@
     "extends": "@shunkakinoki/npm-package-json-lint-config"
   },
   "devDependencies": {
-    "@shunkakinoki/commitlint": "^1.0.8",
+    "@shunkakinoki/commitlint": "^1.0.9",
     "@shunkakinoki/depcheck": "^1.0.1",
     "@shunkakinoki/dev": "^1.2.11",
     "@shunkakinoki/eslint-config": "^1.1.63",
