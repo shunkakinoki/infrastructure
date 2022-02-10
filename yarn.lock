@@ -953,12 +953,12 @@
   dependencies:
     npm-package-json-lint "^5.4.2"
 
-"@shunkakinoki/prettier@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@shunkakinoki/prettier/-/prettier-1.0.3.tgz#20115ba90e194a12de995356d4b61f8dffe70ef4"
-  integrity sha512-tB4KQAn5Yoob3jO7wg2mBZJn89jxKATLxw2rXiwuJNH0xuCVqga1Jih793wYS3+eOVYNOhSP4TiCqZZtPioG9w==
+"@shunkakinoki/prettier@^1.0.6":
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/@shunkakinoki/prettier/-/prettier-1.0.6.tgz#53052ab87f38e79ba03448a50cbdbe70b7137cbf"
+  integrity sha512-G/x9WvSphQeUD0hrhdcT5xjj9JYi9bmWygB78QZUu9AVOEQrkjKKR8lEKuXvctFgoy7Mak/wNiN15lHeqCNivA==
   dependencies:
-    prettier "^2.4.1"
+    prettier "^2.5.1"
     prettier-plugin-packagejson "^2.2.15"
     prettier-plugin-sort-json "^0.0.2"
 
@@ -6327,10 +6327,10 @@ prettier-plugin-sort-json@^0.0.2:
   dependencies:
     "@types/prettier" "^2.2.0"
 
-prettier@^2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
-  integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==
+prettier@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
+  integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
 
 proc-log@^1.0.0:
   version "1.0.0"
