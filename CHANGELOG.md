@@ -1,3 +1,9 @@
+## [2.17.6](https://github.com/shunkakinoki/infrastructure/compare/v2.17.5...v2.17.6) (2022-05-22)
+
+### Performance Improvements
+
+- ini wagumi xyz github pages apex ([4b26097](https://github.com/shunkakinoki/infrastructure/commit/4b26097cab5659a6e6af4ef74e1624ab78915858))
+
 ## [2.17.5](https://github.com/shunkakinoki/infrastructure/compare/v2.17.4...v2.17.5) (2021-11-30)
 
 ### Performance Improvements
