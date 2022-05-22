@@ -50,7 +50,7 @@ resource "aws_route53_record" "cats_wagumi_xyz_CNAME" {
   zone_id = aws_route53_zone.wagumi_xyz.zone_id
   name    = "cats.${aws_route53_zone.wagumi_xyz.name}"
   type    = "CNAME"
-  records = ["cname.vercel-dns.com"]
+  records = ["wagumi.github.io"]
   ttl     = "300"
 }
 
@@ -58,7 +58,7 @@ resource "aws_route53_record" "rinkeby_cats_wagumi_xyz_CNAME" {
   zone_id = aws_route53_zone.wagumi_xyz.zone_id
   name    = "rinkeby.cats.${aws_route53_zone.wagumi_xyz.name}"
   type    = "CNAME"
-  records = ["cname.vercel-dns.com"]
+  records = ["wagumi.github.io"]
   ttl     = "300"
 }
 
