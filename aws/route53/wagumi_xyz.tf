@@ -34,7 +34,7 @@ resource "aws_route53_record" "www_wagumi_xyz_CNAME" {
   zone_id = aws_route53_zone.wagumi_xyz.zone_id
   name    = "www.${aws_route53_zone.wagumi_xyz.name}"
   type    = "CNAME"
-  records = ["cname.vercel-dns.com"]
+  records = ["wagumi.github.io"]
   ttl     = "300"
 }
 
