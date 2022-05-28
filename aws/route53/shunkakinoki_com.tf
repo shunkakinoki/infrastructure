@@ -79,6 +79,14 @@ resource "aws_route53_record" "docs_shunkakinoki_com_CNAME" {
   ttl     = "300"
 }
 
+resource "aws_route53_record" "fly_shunkakinoki_com_CNAME" {
+  zone_id = aws_route53_zone.shunkakinoki_com.zone_id
+  name    = "fly.${aws_route53_zone.shunkakinoki_com.name}"
+  type    = "A"
+  records = ["213.188.221.242"]
+  ttl     = "300"
+}
+
 resource "aws_route53_record" "storybook_shunkakinoki_com_CNAME" {
   zone_id = aws_route53_zone.shunkakinoki_com.zone_id
   name    = "storybook.${aws_route53_zone.shunkakinoki_com.name}"
