@@ -127,6 +127,14 @@ resource "aws_route53_record" "newsletter_shunkakinoki_com_CNAME" {
   ttl     = "300"
 }
 
+resource "aws_route53_record" "acme_challenge_shunkakinoki_com_CNAME" {
+  zone_id = aws_route53_zone.shunkakinoki_com.zone_id
+  name    = "_acme-challenge.fly.${aws_route53_zone.shunkakinoki_com.name}"
+  type    = "CNAME"
+  records = ["fly.shunkakinoki.com.6y16o.flydns.net"]
+  ttl     = "300"
+}
+
 resource "aws_route53_record" "mx__domainkey_newsletter_shunkakinoki_com_TXT" {
   zone_id = aws_route53_zone.shunkakinoki_com.zone_id
   name    = "mx._domainkey.newsletter.${aws_route53_zone.shunkakinoki_com.name}"
