@@ -69,3 +69,35 @@ resource "aws_route53_record" "gov_wagumi_xyz_CNAME" {
   records = ["snapshotpage.b-cdn.net"]
   ttl     = "300"
 }
+
+resource "aws_route53_record" "mail_wagumi_xyz_A" {
+  zone_id = aws_route53_zone.wagumi_xyz.zone_id
+  name    = aws_route53_zone.wagumi_xyz.name
+  type    = "A"
+  records = [
+    "157.7.184.37",
+  ]
+  ttl = "300"
+}
+
+resource "aws_route53_record" "wagumi_xyz_MX" {
+  zone_id = aws_route53_zone.wagumi_xyz.zone_id
+  name    = aws_route53_zone.wagumi_xyz.name
+  type    = "MX"
+  ttl     = "300"
+  records = [
+    "10 mail.wagumi.xyz",
+  ]
+}
+ 
+resource "aws_route53_record" "wagumi_xyz_TXT" {
+  zone_id = aws_route53_zone.wagumi_xyz.zone_id
+  name    = aws_route53_zone.wagumi_xyz.name
+  type    = "TXT"
+  ttl     = "300"
+  records = [
+    "v=spf1 ip4:157.7.184.37 ~all",
+    "v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s;",
+    "v=DKIM1; p=",
+  ]
+}
