@@ -97,7 +97,25 @@ resource "aws_route53_record" "wagumi_xyz_TXT" {
   ttl     = "300"
   records = [
     "v=spf1 ip4:157.7.184.37 ~all",
-    "v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s;",
+  ]
+}
+
+resource "aws_route53_record" "wagumi_xyz_dkim" {
+  zone_id = aws_route53_zone.wagumi_xyz.zone_id
+  name    = "wagumi_domainkey.${aws_route53_zone.wagumi_xyz.name}"
+  type    = "TXT"
+  ttl     = "300"
+  records = [
     "v=DKIM1; p=",
+  ]
+}
+
+resource "aws_route53_record" "wagumi_xyz_dmarc" {
+  zone_id = aws_route53_zone.wagumi_xyz.zone_id
+  name    = "_dmarc.${aws_route53_zone.wagumi_xyz.name}"
+  type    = "TXT"
+  ttl     = "300"
+  records = [
+    "v=DMARC1; p=reject; sp=reject; adkim=s; aspf=s;",
   ]
 }
