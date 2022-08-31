@@ -70,9 +70,10 @@ resource "aws_route53_record" "gov_wagumi_xyz_CNAME" {
   ttl     = "300"
 }
 
+
 resource "aws_route53_record" "mail_wagumi_xyz_A" {
   zone_id = aws_route53_zone.wagumi_xyz.zone_id
-  name    = aws_route53_zone.wagumi_xyz.name
+  name    = "mail.${aws_route53_zone.wagumi_xyz.name}"
   type    = "A"
   records = [
     "157.7.184.37",
@@ -97,16 +98,6 @@ resource "aws_route53_record" "wagumi_xyz_TXT" {
   ttl     = "300"
   records = [
     "v=spf1 ip4:157.7.184.37 ~all",
-  ]
-}
-
-resource "aws_route53_record" "wagumi_xyz_dkim" {
-  zone_id = aws_route53_zone.wagumi_xyz.zone_id
-  name    = "wagumi_domainkey.${aws_route53_zone.wagumi_xyz.name}"
-  type    = "TXT"
-  ttl     = "300"
-  records = [
-    "v=DKIM1; p=",
   ]
 }
 
