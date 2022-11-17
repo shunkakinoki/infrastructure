@@ -10,5 +10,5 @@ terraform {
     aws    = "~> 3.56.0"
     github = "~> 4.13.0"
   }
-  required_version = "=1.0.2"
+  required_version = "=1.3.5"
 }
