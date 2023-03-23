@@ -8,7 +8,7 @@ terraform {
   }
   required_providers {
     aws    = "~> 4.59.0"
-    github = "~> 4.31.0"
+    github = "~> 5.18.3"
   }
   required_version = "=1.0.2"
 }
